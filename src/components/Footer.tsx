@@ -72,8 +72,8 @@ export default function Footer() {
             Transforming Smiles, Transforming Lives. Professional and personalized dental care in a modern and comfortable environment.
           </p>
           <div className="flex items-center gap-3">
-            <span className="text-[12px] bg-[#E71B1E]/15 text-[#E71B1E] px-3.5 py-1 rounded-full font-semibold border border-[#E71B1E]/30 flex items-center gap-1.5">
-              <Clock className="w-3.5 h-3.5" />
+            <span className="text-[12px] bg-[#0AA8DE]/10 text-white/90 px-3.5 py-1 rounded-full font-medium border border-[#0AA8DE]/30 flex items-center gap-1.5">
+              <Clock className="w-3.5 h-3.5 text-[#0AA8DE]" />
               Hours: Monday – Saturday: 9:00 AM – 8:00 PM (Sunday: Closed)
             </span>
           </div>

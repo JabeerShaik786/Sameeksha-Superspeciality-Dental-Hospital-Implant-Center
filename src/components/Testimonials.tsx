@@ -37,21 +37,21 @@ const TESTIMONIALS_DATA: TestimonialCardData[] = [
   {
     id: 4,
     name: "K. Satyanarayana",
-    avatar: "/figma/avatar_test1.png",
+    avatar: "/figma/avatar_satyanarayana.jpg",
     quote:
       "Got dental implant treatment done by Dr. Praveen. The procedure was completed with utmost precision and care. Very hygienic clinic with state-of-the-art equipment. Truly the top dental clinic in Yanam!",
   },
   {
     id: 5,
     name: "M. Durga Prasad",
-    avatar: "/figma/avatar_test2.png",
+    avatar: "/figma/avatar_durgaprasad.jpg",
     quote:
       "Visited for root canal treatment and crown placement. The doctor explained every step patiently and the treatment was completely painless. Exceptional service and very reasonable pricing.",
   },
   {
     id: 6,
     name: "V. Lakshmi",
-    avatar: "/figma/avatar_srinivas.png",
+    avatar: "/figma/avatar_lakshmi.jpg",
     quote:
       "Very polite staff and excellent treatment by Dr. Praveen. Clean and modern clinic environment. Best place for all dental and cosmetic teeth alignment needs in Yanam.",
   },
@@ -235,7 +235,7 @@ export default function Testimonials() {
         {/* Bottom Center "View All" Button */}
         <div className="mt-12 lg:mt-14 text-center">
           <a
-            href="https://www.google.com/search?q=vr+dental+clinic+yanam&rlz=1C1ONGR_en-GBIN1218IN1220&oq=vr+dental&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIHCAMQABiABDIHCAQQABiABDINCAUQLhivARjHARiABDINCAcQLhivARjHARiABDINCAgQLhivARjHARiABDINCAkQLhivARjHARiABNIBCDU3ODZqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x3a37f5629e08049d:0x57e44639afd7d3a6,1,,,,"
+            href="https://www.google.com/search?q=sameeksha+dental+hospital&rlz=1C1ONGR_en-GBIN1218IN1220&sca_esv=306360304c71a31f&biw=1707&bih=862&sxsrf=APpeQnteMVAGiiKtFfm7oUsm6Rdhk8sqMA%3A1789897198193&ei=7qmvaoynC4-UseMPm96-0A8&gs_ssp=eJzj4tVP1zc0TKoqSUmqTK4wYLRSNagwTjS2MLIwSTZMMkozT05JsTKoME4zTDZPszBMTDNNTbI0TvWSLE7MTU3NLs5IVEhJzStJzFHIyC8uyCxJzAEA97IaSA&oq=sameeksha+&gs_lp=Egxnd3Mtd2l6LXNlcnAiCnNhbWVla3NoYSAqCwgCGIAEGMcBGK8BMgoQABiABBiKBRhDMhAQLhiABBiKBRhDGMcBGK8BMgsQLhiABBjHARivATIFEC4YgAQyBRAuGIAEMgUQABiABDIFEAAYgAQyChAAGIAEGIoFGEMyBRAAGIAEMgUQABiABEjXNVDOAljYGXABeAGQAQCYAZoBoAHoBqoBAzUuM7gBAcgBAPgBAZgCCKACiwfCAgYQABgWGB6YAwCIBgGSBwMzLjWgB7tPsgcDMy41uAeLB8IHBzAuNy4wLjHIBxiACAE&sclient=gws-wiz-serp#lrd=0x3a38284c1b2f7cdd:0x3f1c7f81af5eb93e,1,,,,"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-9 py-2.5 bg-[#E71B1E] hover:bg-[#c41215] text-white font-bold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-95 transition-all duration-200"
