@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Smile, Mail, MapPin, Phone, MessageSquare, Clock } from "lucide-react";
+import { Mail, MapPin, Phone, MessageSquare, Clock } from "lucide-react";
 import { getAssetPath } from "@/lib/getAssetPath";
 
 export default function Footer() {
@@ -48,17 +48,23 @@ export default function Footer() {
           <a
             href="#home"
             onClick={(e) => handleLinkClick(e, "#home")}
-            className="flex items-center gap-2 group cursor-pointer"
+            className="flex items-center gap-3.5 group cursor-pointer flex-wrap sm:flex-nowrap"
           >
-            <div className="w-10 h-10 rounded-full bg-[#E71B1E] text-white flex items-center justify-center shadow-md">
-              <Smile className="w-5 h-5 text-white" />
+            <div className="relative w-[130px] sm:w-[140px] h-[36px] sm:h-[40px] shrink-0 bg-white rounded-lg px-1.5 py-1 flex items-center justify-center shadow-sm">
+              <Image
+                src={getAssetPath("/sameeksha-logo.png")}
+                alt="Sameeksha Superspeciality Dental Hospital & Implant Center"
+                fill
+                className="object-contain p-0.5"
+                unoptimized
+              />
             </div>
-            <div className="flex flex-col">
-              <span className="font-heading font-extrabold text-sm tracking-tight text-white leading-tight uppercase">
-                V.R. Dental Care
+            <div className="flex flex-col text-left">
+              <span className="font-heading font-extrabold text-sm sm:text-base tracking-tight text-white leading-tight">
+                Sameeksha Superspeciality
               </span>
-              <span className="font-sans font-medium text-[8px] tracking-[0.05em] text-[#0AA8DE] uppercase leading-none mt-0.5">
-                & Dental Implant Centre
+              <span className="font-sans font-medium text-[10px] sm:text-xs tracking-normal text-[#0AA8DE] leading-tight mt-0.5">
+                Dental Hospital & Implant Center
               </span>
             </div>
           </a>
@@ -138,27 +144,34 @@ export default function Footer() {
           <div className="flex flex-col gap-4 text-sm text-white/60">
             <div className="flex gap-3">
               <MapPin className="w-5 h-5 text-[#E71B1E] shrink-0 mt-0.5" />
-              <span>P6M6+2M Yanam, Puducherry</span>
+              <div className="flex flex-col text-left">
+                <span className="leading-relaxed">
+                  CHOWDARY GUEST HOUSE, GROUND FLOOR, NEAR RTC COLONY 4 ROAD JUNCTION, ROAD, NEAR KAVERI BUS PARKING, Ramanayapeta, Ramanayyapeta, Andhra Pradesh 533005
+                </span>
+                <span className="text-xs text-white/50 mt-1 font-medium">
+                  X6VX+R3 Ramanayyapeta, Andhra Pradesh
+                </span>
+              </div>
             </div>
             <div className="flex gap-3">
               <Phone className="w-5 h-5 text-[#E71B1E] shrink-0 mt-0.5" />
-              <a href="tel:09885349798" className="hover:text-[#E71B1E] transition-colors">
-                098853 49798
+              <a href="tel:08885999857" className="hover:text-[#E71B1E] transition-colors">
+                088859 99857
               </a>
             </div>
             <div className="flex gap-3">
               <Mail className="w-5 h-5 text-[#E71B1E] shrink-0 mt-0.5" />
               <a
-                href="mailto:VRdental.yanam@gmail.com"
+                href="mailto:sameekshadentalhospital@gmail.com"
                 className="hover:text-[#E71B1E] transition-colors"
               >
-                VRdental.yanam@gmail.com
+                sameekshadentalhospital@gmail.com
               </a>
             </div>
             <div className="flex gap-3">
               <MessageSquare className="w-5 h-5 text-[#25D366] shrink-0 mt-0.5" />
               <a
-                href="https://wa.me/919885349798"
+                href="https://wa.me/918885999857"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#25D366] transition-colors"
@@ -173,7 +186,7 @@ export default function Footer() {
       <hr className="border-white/10 max-w-[1440px] mx-auto px-6 md:px-12" />
 
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 mt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40 text-center md:text-left">
-        <p>© {currentYear} V.R. Dental Care & Dental Implant Centre. All rights reserved.</p>
+        <p>© {currentYear} Sameeksha Superspeciality Dental Hospital & Implant Center. All rights reserved.</p>
         <p className="text-white/40 flex items-center justify-center gap-1.5">
           <Image
             src={getAssetPath("/jk-logo.png")}
