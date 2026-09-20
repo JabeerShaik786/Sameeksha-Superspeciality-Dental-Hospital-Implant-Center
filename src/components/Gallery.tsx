@@ -112,7 +112,7 @@ export default function Gallery() {
           <a
             href="#contact"
             onClick={scrollToContact}
-            className="inline-flex items-center justify-center px-9 py-2.5 bg-gradient-to-r from-[#0ea5e9] to-[#0284c7] text-white font-semibold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg hover:opacity-95 active:scale-95 transition-all duration-200"
+            className="inline-flex items-center justify-center px-9 py-2.5 bg-gradient-to-r from-[#0AA8DE] to-[#0895c6] text-white font-semibold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg hover:opacity-95 active:scale-95 transition-all duration-200"
           >
             View All
           </a>

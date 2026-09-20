@@ -21,7 +21,7 @@ export default function AppointmentCTA() {
       id="contact"
       className="py-20 lg:py-24 relative overflow-hidden text-white"
       style={{
-        background: "linear-gradient(160deg, #245b83 0%, #2e6993 50%, #1e4d70 100%)",
+        background: "linear-gradient(160deg, #075a7a 0%, #0AA8DE 60%, #084c68 100%)",
       }}
     >
       <div className="max-w-[1360px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
@@ -43,7 +43,7 @@ export default function AppointmentCTA() {
               <a
                 href="#consultancy"
                 onClick={scrollToBooking}
-                className="inline-flex items-center justify-center px-8 py-3 bg-white text-[#0284c7] font-bold text-sm sm:text-base rounded-lg shadow-lg hover:bg-slate-50 active:scale-95 transition-all duration-200 cursor-pointer"
+                className="inline-flex items-center justify-center px-8 py-3 bg-white text-[#0AA8DE] font-bold text-sm sm:text-base rounded-lg shadow-lg hover:bg-[#E71B1E] hover:text-white active:scale-95 transition-all duration-200 cursor-pointer"
               >
                 Get Started
               </a>
@@ -53,7 +53,7 @@ export default function AppointmentCTA() {
           {/* RIGHT: Large Cartoon Smiling Tooth in Circular Light Blue Container */}
           <div className="lg:col-span-6 flex justify-center lg:justify-end relative">
             {/* Circular Backdrop */}
-            <div className="relative w-[300px] h-[300px] sm:w-[380px] sm:h-[380px] lg:w-[430px] lg:h-[430px] rounded-full bg-[#a8dbf8]/40 flex items-center justify-center border-4 border-white/20 shadow-2xl">
+            <div className="relative w-[300px] h-[300px] sm:w-[380px] sm:h-[380px] lg:w-[430px] lg:h-[430px] rounded-full bg-[#0AA8DE]/25 flex items-center justify-center border-4 border-white/20 shadow-2xl">
               {/* Cartoon Smiling Tooth Character */}
               <div className="relative w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] lg:w-[390px] lg:h-[390px] filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.25)]">
                 <Image

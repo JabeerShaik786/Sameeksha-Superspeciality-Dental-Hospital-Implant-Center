@@ -145,7 +145,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="py-20 lg:py-28 relative overflow-hidden bg-[#f2f7fb]"
+      className="py-20 lg:py-28 relative overflow-hidden bg-[#f0f9fc]"
     >
       {/* Large subtle white decorative circle on right side */}
       <div className="absolute -right-20 top-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full border-[100px] border-white/60 pointer-events-none select-none z-0" />
@@ -154,12 +154,12 @@ export default function Testimonials() {
         
         {/* Header (Top Left Aligned) */}
         <div className="max-w-xl text-left mb-12 lg:mb-14">
-          {/* Label with blue underline under TESTIMONIALS */}
+          {/* Label with accent red underline under TESTIMONIALS */}
           <div className="mb-3">
             <span className="relative inline-block text-xs md:text-sm font-bold tracking-[0.16em] uppercase pb-1 text-[#0f2942]">
-              <span className="relative text-[#0284c7]">
+              <span className="relative text-[#0AA8DE]">
                 TESTIMONIALS
-                <span className="absolute bottom-0 left-0 w-full h-[2.5px] bg-[#0284c7] rounded-full" />
+                <span className="absolute bottom-0 left-0 w-full h-[2.5px] bg-[#E71B1E] rounded-full" />
               </span>
             </span>
           </div>
@@ -167,7 +167,7 @@ export default function Testimonials() {
           {/* Heading */}
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#0f2942] tracking-tight leading-[1.18]">
             Smiles That Speak for<br />
-            <span className="text-[#0284c7]">Themselves</span>
+            <span className="text-[#0AA8DE]">Themselves</span>
           </h2>
         </div>
 
@@ -235,7 +235,7 @@ export default function Testimonials() {
             href="https://www.google.com/search?q=vr+dental+clinic+yanam&rlz=1C1ONGR_en-GBIN1218IN1220&oq=vr+dental&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIHCAMQABiABDIHCAQQABiABDINCAUQLhivARjHARiABDINCAcQLhivARjHARiABDINCAgQLhivARjHARiABDINCAkQLhivARjHARiABNIBCDU3ODZqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x3a37f5629e08049d:0x57e44639afd7d3a6,1,,,,"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-9 py-2.5 bg-gradient-to-r from-[#0ea5e9] to-[#0284c7] text-white font-semibold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg hover:opacity-95 active:scale-95 transition-all duration-200"
+            className="inline-flex items-center justify-center px-9 py-2.5 bg-gradient-to-r from-[#0AA8DE] to-[#0895c6] text-white font-semibold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg hover:opacity-95 active:scale-95 transition-all duration-200"
           >
             View All
           </a>
