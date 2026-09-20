@@ -129,7 +129,7 @@ export default function ContactSection() {
                           id="fullName"
                           type="text"
                           placeholder="e.g. Rahul Verma"
-                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all duration-300 ${
+                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#0AA8DE] focus:ring-4 focus:ring-[#0AA8DE]/15 transition-all duration-300 ${
                             errors.fullName ? "border-red-500" : "border-borders/60"
                           }`}
                           {...register("fullName", { required: "Full name is required" })}
@@ -148,7 +148,7 @@ export default function ContactSection() {
                           id="phone"
                           type="tel"
                           placeholder="10-digit mobile number"
-                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all duration-300 ${
+                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#0AA8DE] focus:ring-4 focus:ring-[#0AA8DE]/15 transition-all duration-300 ${
                             errors.phone ? "border-red-500" : "border-borders/60"
                           }`}
                           {...register("phone", {
@@ -170,7 +170,7 @@ export default function ContactSection() {
                           id="email"
                           type="email"
                           placeholder="e.g. rahul@example.com"
-                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all duration-300 ${
+                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#0AA8DE] focus:ring-4 focus:ring-[#0AA8DE]/15 transition-all duration-300 ${
                             errors.email ? "border-red-500" : "border-borders/60"
                           }`}
                           {...register("email", {
@@ -191,7 +191,7 @@ export default function ContactSection() {
                         <input
                           id="date"
                           type="date"
-                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all duration-300 ${
+                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#0AA8DE] focus:ring-4 focus:ring-[#0AA8DE]/15 transition-all duration-300 ${
                             errors.date ? "border-red-500" : "border-borders/60"
                           }`}
                           {...register("date", { required: "Please select a date" })}
@@ -209,7 +209,7 @@ export default function ContactSection() {
                         <input
                           id="time"
                           type="time"
-                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all duration-300 ${
+                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#0AA8DE] focus:ring-4 focus:ring-[#0AA8DE]/15 transition-all duration-300 ${
                             errors.time ? "border-red-500" : "border-borders/60"
                           }`}
                           {...register("time", { required: "Please select a time slot" })}
@@ -226,7 +226,7 @@ export default function ContactSection() {
                         </label>
                         <select
                           id="service"
-                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all duration-300 ${
+                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#0AA8DE] focus:ring-4 focus:ring-[#0AA8DE]/15 transition-all duration-300 ${
                             errors.service ? "border-red-500" : "border-borders/60"
                           }`}
                           defaultValue=""
@@ -257,7 +257,7 @@ export default function ContactSection() {
                           id="message"
                           rows={3}
                           placeholder="Describe any symptoms, pain location, cosmetic goals, or questions..."
-                          className="w-full p-5 rounded-2xl bg-[#F8FAFC] border border-borders/60 text-sm font-semibold focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all duration-300 resize-none animate-none"
+                          className="w-full p-5 rounded-2xl bg-[#F8FAFC] border border-borders/60 text-sm font-semibold focus:border-[#0AA8DE] focus:ring-4 focus:ring-[#0AA8DE]/15 transition-all duration-300 resize-none animate-none"
                           {...register("message")}
                         />
                       </div>

@@ -21,7 +21,7 @@ export default function AppointmentCTA() {
       id="contact"
       className="py-20 lg:py-24 relative overflow-hidden text-white"
       style={{
-        background: "linear-gradient(160deg, #075a7a 0%, #0AA8DE 60%, #084c68 100%)",
+        background: "linear-gradient(160deg, #0779a1 0%, #0AA8DE 55%, #066687 100%)",
       }}
     >
       <div className="max-w-[1360px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">

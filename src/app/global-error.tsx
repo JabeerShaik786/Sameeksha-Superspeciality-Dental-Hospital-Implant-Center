@@ -14,7 +14,7 @@ export default function GlobalError({
         <p className="text-sm text-slate-500 mb-6">{error?.message || "An unexpected error occurred."}</p>
         <button
           onClick={() => reset()}
-          className="px-6 py-2.5 bg-[#087CE2] text-white font-semibold text-sm rounded-xl hover:bg-[#1D4ED8] transition-colors"
+          className="px-6 py-2.5 bg-[#0AA8DE] text-white font-semibold text-sm rounded-xl hover:bg-[#088ec0] transition-colors"
         >
           Try again
         </button>

@@ -110,26 +110,22 @@ export default function Navbar() {
       <div className="w-full bg-white relative h-[72px] flex items-center">
         <div className="max-w-[1360px] mx-auto w-full px-6 md:px-12 lg:px-20 flex items-center justify-between">
           
-          {/* Overlapping Logo Container Badge */}
-          <div className="relative -top-3 z-20 shrink-0">
+          {/* Sameeksha Super Speciality Dental Hospital Logo */}
+          <div className="relative z-20 shrink-0 flex items-center">
             <a
               href="#home"
               onClick={(e) => scrollToSection(e, "#home")}
-              className="bg-white rounded-b-2xl shadow-md px-3.5 pt-2 pb-2.5 flex flex-col items-center border-b border-x border-slate-100 transition-transform hover:scale-[1.02]"
-              style={{ width: "94px" }}
+              className="flex items-center transition-transform hover:scale-[1.02] py-1"
             >
-              <div className="relative w-[72px] h-[64px]">
+              <div className="relative w-[170px] sm:w-[200px] md:w-[230px] lg:w-[250px] h-[48px] sm:h-[54px] md:h-[58px] lg:h-[62px]">
                 <Image
-                  src={getAssetPath("/logo.png")}
-                  alt="V.R. Dental Care & Dental Implant Centre"
+                  src={getAssetPath("/sameeksha-logo.png")}
+                  alt="Sameeksha Super Speciality Dental Hospital"
                   fill
-                  className="object-contain"
+                  className="object-contain object-left"
                   priority
                   unoptimized
                 />
-              </div>
-              <div className="mt-1 px-2 py-0.5 bg-[#E71B1E] rounded text-[9px] font-bold text-white tracking-wider uppercase shadow-2xs">
-                ESTD. 2011
               </div>
             </a>
           </div>

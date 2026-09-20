@@ -69,7 +69,7 @@ export default function TermsOfServicePage() {
               <p className="text-slate-600 leading-relaxed text-sm sm:text-base mb-4">
                 <strong>V.R. Dental Care & Dental Implant Centre</strong> provides multidisciplinary dental healthcare including general dentistry, dental implants, root canal therapy, orthodontics, smile designing, laser surgeries, pediatric dental care, and oral rehabilitation.
               </p>
-              <div className="p-4 bg-sky-50/70 rounded-xl border border-sky-100 flex items-start gap-3">
+              <div className="p-4 bg-[#0AA8DE]/5 rounded-xl border border-[#0AA8DE]/20 flex items-start gap-3">
                 <Stethoscope className="w-5 h-5 text-[#0AA8DE] shrink-0 mt-0.5" />
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   All treatments are performed by registered dental practitioners in accordance with standards established by the Dental Council of India (DCI). Specific clinical outcomes may vary depending on patient anatomy, bone density, periodontal health, and compliance with post-operative instructions.
