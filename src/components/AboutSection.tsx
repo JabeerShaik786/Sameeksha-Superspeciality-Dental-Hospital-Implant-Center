@@ -47,12 +47,12 @@ export default function AboutSection() {
 
           {/* RIGHT: Typography & Content */}
           <div className="lg:col-span-6 flex flex-col items-start text-left">
-            {/* 14 YEARS OF EXCELLENCE with red accent underline under 14 YEARS */}
+            {/* 14 YEARS OF EXCELLENCE with blue accent underline under 14 YEARS */}
             <div className="mb-4">
               <span className="relative inline-block text-xs md:text-sm font-extrabold tracking-[0.16em] uppercase pb-1 text-[#0f2942]">
-                <span className="relative text-[#0AA8DE]">
+                <span className="relative text-[#E71B1E]">
                   14 YEARS
-                  <span className="absolute bottom-0 left-0 w-full h-[3px] bg-[#E71B1E] rounded-full" />
+                  <span className="absolute bottom-0 left-0 w-full h-[3px] bg-[#0AA8DE] rounded-full" />
                 </span>
                 <span className="ml-2 font-bold text-[#0f2942]">OF EXCELLENCE</span>
               </span>
@@ -61,7 +61,7 @@ export default function AboutSection() {
             {/* Main Section Heading */}
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#0f2942] tracking-tight leading-[1.18] mb-6">
               Caring for Your Smile<br />
-              <span className="text-[#0AA8DE]">Since 2011</span>
+              <span className="text-[#E71B1E]">Since 2011</span>
             </h2>
 
             {/* Description Paragraph */}
@@ -69,12 +69,12 @@ export default function AboutSection() {
               At VR Dental Care, we have been transforming smiles and enhancing oral health for over 14 years. Established in 2011, our clinic has been a trusted name in advanced dental care, providing high-quality treatments with a patient-first approach.
             </p>
 
-            {/* Primary Blue Read More Button */}
+            {/* Primary Red Read More Button */}
             <div>
               <a
                 href="#contact"
                 onClick={scrollToContact}
-                className="inline-flex items-center justify-center px-8 py-3 bg-[#0AA8DE] hover:bg-[#088ec0] text-white font-bold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg active:scale-95 transition-all duration-200 cursor-pointer"
+                className="inline-flex items-center justify-center px-8 py-3 bg-[#E71B1E] hover:bg-[#c41215] text-white font-bold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg active:scale-95 transition-all duration-200 cursor-pointer"
               >
                 Read More
               </a>

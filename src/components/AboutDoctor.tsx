@@ -91,7 +91,7 @@ export default function AboutDoctor() {
 
               {/* Floating Facility Info Overlay */}
               <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md px-4 py-3.5 rounded-[16px] shadow-md border border-white/30 text-left">
-                <span className="text-[10px] font-extrabold bg-[#0AA8DE]/10 text-[#0AA8DE] px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                <span className="text-[10px] font-extrabold bg-[#E71B1E]/10 text-[#E71B1E] px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                   Facility Tour
                 </span>
                 <h4 className="text-sm font-extrabold text-slate-800 leading-snug mt-1.5">
@@ -111,7 +111,7 @@ export default function AboutDoctor() {
                   onClick={() => setActiveImgIndex(idx)}
                   className={`relative w-20 aspect-[4/3] rounded-xl overflow-hidden border-2 transition-all duration-300 ${
                     activeImgIndex === idx
-                      ? "border-[#0AA8DE] scale-105 shadow-md shadow-[#0AA8DE]/20"
+                      ? "border-[#E71B1E] scale-105 shadow-md shadow-[#E71B1E]/20"
                       : "border-transparent opacity-60 hover:opacity-100 hover:scale-102"
                   }`}
                   aria-label={`View ${img.title}`}
@@ -136,13 +136,13 @@ export default function AboutDoctor() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="lg:col-span-7 flex flex-col items-start"
           >
-            <span className="text-sm font-bold text-[#0AA8DE] uppercase tracking-widest mb-3">
+            <span className="text-sm font-bold text-[#E71B1E] uppercase tracking-widest mb-3">
               About Us
             </span>
             <h2 className="font-heading font-extrabold text-3xl md:text-[38px] text-dark-text tracking-tight leading-tight mb-4">
               V.R. Dental Care & Dental Implant Centre
             </h2>
-            <div className="h-[3.5px] w-14 bg-[#E71B1E] rounded-full mb-6" />
+            <div className="h-[3.5px] w-14 bg-[#0AA8DE] rounded-full mb-6" />
 
             {/* Navigation Tabs */}
             <div className="flex flex-wrap gap-2 border-b border-borders w-full pb-3 mb-8 text-left">
@@ -152,7 +152,7 @@ export default function AboutDoctor() {
                   onClick={() => setActiveTab(tab.id as TabType)}
                   className={`relative px-4 py-2.5 text-sm font-semibold rounded-xl transition-all duration-200 ${
                     activeTab === tab.id
-                      ? "text-[#0AA8DE] bg-[#0AA8DE]/10 font-bold"
+                      ? "text-[#E71B1E] bg-[#E71B1E]/10 font-bold"
                       : "text-gray-text hover:text-dark-text hover:bg-slate-50"
                   }`}
                 >
@@ -160,7 +160,7 @@ export default function AboutDoctor() {
                   {activeTab === tab.id && (
                     <motion.div
                       layoutId="activeTabIndicator"
-                      className="absolute bottom-[-13px] inset-x-0 h-[2.5px] bg-[#0AA8DE]"
+                      className="absolute bottom-[-13px] inset-x-0 h-[2.5px] bg-[#E71B1E]"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}
@@ -204,8 +204,8 @@ export default function AboutDoctor() {
                       { title: "Personalized Treatment", desc: "Care plans custom-tailored to your unique dental requirements and aesthetic goals." },
                       { title: "Preventive Care Focus", desc: "Active maintenance and early cavity inspection to preserve your natural smile." }
                     ].map((item, idx) => (
-                      <div key={idx} className="p-4 rounded-xl border border-borders/60 hover:border-[#0AA8DE]/40 hover:bg-[#0AA8DE]/5 transition-all duration-200 flex gap-3.5">
-                        <Smile className="w-6 h-6 text-[#0AA8DE] shrink-0 mt-0.5" />
+                      <div key={idx} className="p-4 rounded-xl border border-borders/60 hover:border-[#E71B1E]/40 hover:bg-[#E71B1E]/5 transition-all duration-200 flex gap-3.5">
+                        <Smile className="w-6 h-6 text-[#E71B1E] shrink-0 mt-0.5" />
                         <div className="flex flex-col">
                           <h4 className="font-heading font-bold text-sm text-dark-text leading-snug">{item.title}</h4>
                           <p className="text-xs text-gray-text mt-1 leading-relaxed">{item.desc}</p>
@@ -240,7 +240,7 @@ export default function AboutDoctor() {
                     ].map((item, idx) => (
                       <div key={idx} className="flex gap-4">
                         <div className="flex flex-col items-center shrink-0">
-                          <div className="w-9 h-9 rounded-full bg-[#0AA8DE]/10 text-[#0AA8DE] flex items-center justify-center">
+                          <div className="w-9 h-9 rounded-full bg-[#E71B1E]/10 text-[#E71B1E] flex items-center justify-center">
                             <Sparkles className="w-5 h-5" />
                           </div>
                           {idx !== 2 && <div className="w-[2px] h-12 bg-borders mt-1" />}

@@ -154,12 +154,12 @@ export default function Testimonials() {
         
         {/* Header (Top Left Aligned) */}
         <div className="max-w-xl text-left mb-12 lg:mb-14">
-          {/* Label with accent red underline under TESTIMONIALS */}
+          {/* Label with accent blue underline under TESTIMONIALS */}
           <div className="mb-3">
             <span className="relative inline-block text-xs md:text-sm font-bold tracking-[0.16em] uppercase pb-1 text-[#0f2942]">
-              <span className="relative text-[#0AA8DE]">
+              <span className="relative text-[#E71B1E]">
                 TESTIMONIALS
-                <span className="absolute bottom-0 left-0 w-full h-[2.5px] bg-[#E71B1E] rounded-full" />
+                <span className="absolute bottom-0 left-0 w-full h-[2.5px] bg-[#0AA8DE] rounded-full" />
               </span>
             </span>
           </div>
@@ -167,7 +167,7 @@ export default function Testimonials() {
           {/* Heading */}
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#0f2942] tracking-tight leading-[1.18]">
             Smiles That Speak for<br />
-            <span className="text-[#0AA8DE]">Themselves</span>
+            <span className="text-[#E71B1E]">Themselves</span>
           </h2>
         </div>
 
@@ -194,7 +194,7 @@ export default function Testimonials() {
                 key={`${item.id}-${idx}`}
                 className="w-full md:w-1/2 lg:w-1/3 px-3 shrink-0 flex"
               >
-                <div className="w-full bg-white rounded-2xl p-6 sm:p-7 shadow-[0_8px_30px_rgba(10,168,222,0.06)] border border-[#0AA8DE]/20 hover:border-[#0AA8DE] flex flex-col justify-between text-left hover:shadow-xl transition-all duration-300 h-full relative group">
+                <div className="w-full bg-white rounded-2xl p-6 sm:p-7 shadow-[0_8px_30px_rgba(231,27,30,0.06)] border border-[#E71B1E]/20 hover:border-[#E71B1E] flex flex-col justify-between text-left hover:shadow-xl transition-all duration-300 h-full relative group">
                   {/* Accent bar & Review Quote */}
                   <div>
                     <div className="w-8 h-1 bg-[#E71B1E] rounded-full mb-3" />
@@ -238,7 +238,7 @@ export default function Testimonials() {
             href="https://www.google.com/search?q=vr+dental+clinic+yanam&rlz=1C1ONGR_en-GBIN1218IN1220&oq=vr+dental&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIHCAMQABiABDIHCAQQABiABDINCAUQLhivARjHARiABDINCAcQLhivARjHARiABDINCAgQLhivARjHARiABDINCAkQLhivARjHARiABNIBCDU3ODZqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x3a37f5629e08049d:0x57e44639afd7d3a6,1,,,,"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-9 py-2.5 bg-[#0AA8DE] hover:bg-[#088ec0] text-white font-bold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-95 transition-all duration-200"
+            className="inline-flex items-center justify-center px-9 py-2.5 bg-[#E71B1E] hover:bg-[#c41215] text-white font-bold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-95 transition-all duration-200"
           >
             View All
           </a>

@@ -25,9 +25,9 @@ function ContactCard({ icon: Icon, title, details }: ContactCardProps) {
   return (
     <motion.div
       whileHover={{ y: -4 }}
-      className="p-5 rounded-[18px] border transition-all duration-300 flex items-start gap-4 bg-white border-borders/60 shadow-sm hover:shadow-md hover:border-[#0AA8DE]/30"
+      className="p-5 rounded-[18px] border transition-all duration-300 flex items-start gap-4 bg-white border-borders/60 shadow-sm hover:shadow-md hover:border-[#E71B1E]/30"
     >
-      <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 bg-[#0AA8DE]/10 text-[#0AA8DE]">
+      <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 bg-[#E71B1E]/10 text-[#E71B1E]">
         <Icon className="w-5 h-5" />
       </div>
       <div className="flex flex-col text-left">
@@ -37,14 +37,14 @@ function ContactCard({ icon: Icon, title, details }: ContactCardProps) {
         {title === "Email" ? (
           <a
             href="mailto:VRdental.yanam@gmail.com"
-            className="text-sm font-semibold text-dark-text mt-1 hover:text-[#0AA8DE] transition-colors"
+            className="text-sm font-semibold text-dark-text mt-1 hover:text-[#E71B1E] transition-colors"
           >
             {details}
           </a>
         ) : title === "Reception & Booking" ? (
           <a
             href="tel:09885349798"
-            className="text-sm font-semibold text-dark-text mt-1 hover:text-[#0AA8DE] transition-colors"
+            className="text-sm font-semibold text-dark-text mt-1 hover:text-[#E71B1E] transition-colors"
           >
             {details}
           </a>
@@ -90,18 +90,18 @@ export default function ContactSection() {
         
         {/* Section Heading */}
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-20">
-          <span className="text-sm font-bold text-[#0AA8DE] uppercase tracking-widest mb-3">
+          <span className="text-sm font-bold text-[#E71B1E] uppercase tracking-widest mb-3">
             Appointment Booking
           </span>
           <h2 className="font-heading font-extrabold text-3xl md:text-[48px] text-dark-text tracking-tight leading-tight">
             Book Your Dental Appointment
           </h2>
-          <div className="h-[3.5px] w-14 bg-[#E71B1E] rounded-full mt-6" />
+          <div className="h-[3.5px] w-14 bg-[#0AA8DE] rounded-full mt-6" />
         </div>
 
         {/* Form Container */}
         <div className="max-w-[800px] mx-auto w-full mb-24">
-          <div className="rounded-[28px] p-8 md:p-12 bg-white border border-[#0AA8DE]/20 shadow-xl shadow-[#0AA8DE]/5 relative min-h-[580px] flex flex-col justify-center">
+          <div className="rounded-[28px] p-8 md:p-12 bg-white border border-[#E71B1E]/20 shadow-xl shadow-[#E71B1E]/5 relative min-h-[580px] flex flex-col justify-center">
               
               <AnimatePresence mode="wait">
                 {!isSubmitted ? (
@@ -129,7 +129,7 @@ export default function ContactSection() {
                           id="fullName"
                           type="text"
                           placeholder="e.g. Rahul Verma"
-                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#0AA8DE] focus:ring-4 focus:ring-[#0AA8DE]/15 transition-all duration-300 ${
+                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#E71B1E] focus:ring-4 focus:ring-[#E71B1E]/15 transition-all duration-300 ${
                             errors.fullName ? "border-red-500" : "border-borders/60"
                           }`}
                           {...register("fullName", { required: "Full name is required" })}
@@ -148,7 +148,7 @@ export default function ContactSection() {
                           id="phone"
                           type="tel"
                           placeholder="10-digit mobile number"
-                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#0AA8DE] focus:ring-4 focus:ring-[#0AA8DE]/15 transition-all duration-300 ${
+                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#E71B1E] focus:ring-4 focus:ring-[#E71B1E]/15 transition-all duration-300 ${
                             errors.phone ? "border-red-500" : "border-borders/60"
                           }`}
                           {...register("phone", {
@@ -170,7 +170,7 @@ export default function ContactSection() {
                           id="email"
                           type="email"
                           placeholder="e.g. rahul@example.com"
-                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#0AA8DE] focus:ring-4 focus:ring-[#0AA8DE]/15 transition-all duration-300 ${
+                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#E71B1E] focus:ring-4 focus:ring-[#E71B1E]/15 transition-all duration-300 ${
                             errors.email ? "border-red-500" : "border-borders/60"
                           }`}
                           {...register("email", {
@@ -191,7 +191,7 @@ export default function ContactSection() {
                         <input
                           id="date"
                           type="date"
-                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#0AA8DE] focus:ring-4 focus:ring-[#0AA8DE]/15 transition-all duration-300 ${
+                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#E71B1E] focus:ring-4 focus:ring-[#E71B1E]/15 transition-all duration-300 ${
                             errors.date ? "border-red-500" : "border-borders/60"
                           }`}
                           {...register("date", { required: "Please select a date" })}
@@ -209,7 +209,7 @@ export default function ContactSection() {
                         <input
                           id="time"
                           type="time"
-                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#0AA8DE] focus:ring-4 focus:ring-[#0AA8DE]/15 transition-all duration-300 ${
+                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#E71B1E] focus:ring-4 focus:ring-[#E71B1E]/15 transition-all duration-300 ${
                             errors.time ? "border-red-500" : "border-borders/60"
                           }`}
                           {...register("time", { required: "Please select a time slot" })}
@@ -226,7 +226,7 @@ export default function ContactSection() {
                         </label>
                         <select
                           id="service"
-                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#0AA8DE] focus:ring-4 focus:ring-[#0AA8DE]/15 transition-all duration-300 ${
+                          className={`w-full h-14 px-5 rounded-2xl bg-[#F8FAFC] border text-sm font-semibold focus:border-[#E71B1E] focus:ring-4 focus:ring-[#E71B1E]/15 transition-all duration-300 ${
                             errors.service ? "border-red-500" : "border-borders/60"
                           }`}
                           defaultValue=""
@@ -257,7 +257,7 @@ export default function ContactSection() {
                           id="message"
                           rows={3}
                           placeholder="Describe any symptoms, pain location, cosmetic goals, or questions..."
-                          className="w-full p-5 rounded-2xl bg-[#F8FAFC] border border-borders/60 text-sm font-semibold focus:border-[#0AA8DE] focus:ring-4 focus:ring-[#0AA8DE]/15 transition-all duration-300 resize-none animate-none"
+                          className="w-full p-5 rounded-2xl bg-[#F8FAFC] border border-borders/60 text-sm font-semibold focus:border-[#E71B1E] focus:ring-4 focus:ring-[#E71B1E]/15 transition-all duration-300 resize-none animate-none"
                           {...register("message")}
                         />
                       </div>
@@ -267,7 +267,7 @@ export default function ContactSection() {
                         <button
                           type="submit"
                           disabled={isSubmitting}
-                          className="w-full h-14 bg-[#0AA8DE] hover:bg-[#088ec0] text-white font-bold text-base rounded-2xl shadow-lg shadow-[#0AA8DE]/25 hover:shadow-xl hover:shadow-[#0AA8DE]/35 transition-all duration-300 flex items-center justify-center gap-2.5 disabled:opacity-75 cursor-pointer hover:-translate-y-0.5 active:translate-y-0"
+                          className="w-full h-14 bg-[#E71B1E] hover:bg-[#c41215] text-white font-bold text-base rounded-2xl shadow-lg shadow-[#E71B1E]/25 hover:shadow-xl hover:shadow-[#E71B1E]/35 transition-all duration-300 flex items-center justify-center gap-2.5 disabled:opacity-75 cursor-pointer hover:-translate-y-0.5 active:translate-y-0"
                         >
                           {isSubmitting ? (
                             <span className="w-5 h-5 rounded-full border-2 border-white border-t-transparent animate-spin" />
@@ -281,7 +281,7 @@ export default function ContactSection() {
                         
                         <div className="flex items-center justify-center gap-2 text-sm text-gray-text font-medium">
                           <span>Or call directly:</span>
-                          <a href="tel:09885349798" className="text-[#0AA8DE] font-bold hover:underline">
+                          <a href="tel:09885349798" className="text-[#E71B1E] font-bold hover:underline">
                             Call 098853 49798
                           </a>
                         </div>

@@ -16,7 +16,7 @@ export default function TermsOfServicePage() {
       <Navbar />
       <main className="flex-grow pt-28 pb-20 bg-[#f8fafc]">
         {/* Header Banner */}
-        <section className="bg-gradient-to-r from-[#0779a1] via-[#0AA8DE] to-[#20bbf2] text-white py-14 px-6 md:px-12 lg:px-20 relative overflow-hidden">
+        <section className="bg-gradient-to-r from-[#c41215] via-[#E71B1E] to-[#0AA8DE] text-white py-14 px-6 md:px-12 lg:px-20 relative overflow-hidden">
           <div className="max-w-[1100px] mx-auto relative z-10">
             <Link
               href="/"
@@ -52,7 +52,7 @@ export default function TermsOfServicePage() {
             {/* 1. Acceptance */}
             <div>
               <h2 className="text-xl sm:text-2xl font-bold text-[#0f2942] mb-4 flex items-center gap-2.5">
-                <span className="w-2 h-6 bg-[#0AA8DE] rounded-full inline-block" />
+                <span className="w-2 h-6 bg-[#E71B1E] rounded-full inline-block" />
                 1. Acceptance of Terms
               </h2>
               <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
@@ -63,7 +63,7 @@ export default function TermsOfServicePage() {
             {/* 2. Dental Services & Consultations */}
             <div>
               <h2 className="text-xl sm:text-2xl font-bold text-[#0f2942] mb-4 flex items-center gap-2.5">
-                <span className="w-2 h-6 bg-[#0AA8DE] rounded-full inline-block" />
+                <span className="w-2 h-6 bg-[#E71B1E] rounded-full inline-block" />
                 2. Clinical Treatments & Scope of Care
               </h2>
               <p className="text-slate-600 leading-relaxed text-sm sm:text-base mb-4">
@@ -80,7 +80,7 @@ export default function TermsOfServicePage() {
             {/* 3. Appointments & Punctuality */}
             <div>
               <h2 className="text-xl sm:text-2xl font-bold text-[#0f2942] mb-4 flex items-center gap-2.5">
-                <span className="w-2 h-6 bg-[#0AA8DE] rounded-full inline-block" />
+                <span className="w-2 h-6 bg-[#E71B1E] rounded-full inline-block" />
                 3. Appointments & Rescheduling
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
@@ -106,7 +106,7 @@ export default function TermsOfServicePage() {
             {/* 4. Patient Medical Disclosure & Informed Consent */}
             <div>
               <h2 className="text-xl sm:text-2xl font-bold text-[#0f2942] mb-4 flex items-center gap-2.5">
-                <span className="w-2 h-6 bg-[#0AA8DE] rounded-full inline-block" />
+                <span className="w-2 h-6 bg-[#E71B1E] rounded-full inline-block" />
                 4. Patient Health Disclosure & Informed Consent
               </h2>
               <p className="text-slate-600 leading-relaxed text-sm sm:text-base mb-3">
@@ -120,7 +120,7 @@ export default function TermsOfServicePage() {
             {/* 5. Online & WhatsApp Consultation Disclaimer */}
             <div>
               <h2 className="text-xl sm:text-2xl font-bold text-[#0f2942] mb-4 flex items-center gap-2.5">
-                <span className="w-2 h-6 bg-[#0AA8DE] rounded-full inline-block" />
+                <span className="w-2 h-6 bg-[#E71B1E] rounded-full inline-block" />
                 5. Online & WhatsApp Consultation Disclaimer
               </h2>
               <div className="p-4 bg-amber-50/80 rounded-xl border border-amber-200/70 text-amber-900 text-xs sm:text-sm leading-relaxed">
@@ -131,7 +131,7 @@ export default function TermsOfServicePage() {
             {/* 6. Treatment Estimates & Payments */}
             <div>
               <h2 className="text-xl sm:text-2xl font-bold text-[#0f2942] mb-4 flex items-center gap-2.5">
-                <span className="w-2 h-6 bg-[#0AA8DE] rounded-full inline-block" />
+                <span className="w-2 h-6 bg-[#E71B1E] rounded-full inline-block" />
                 6. Treatment Estimates & Payment Policy
               </h2>
               <p className="text-slate-600 leading-relaxed text-sm sm:text-base mb-3">
@@ -146,7 +146,7 @@ export default function TermsOfServicePage() {
             {/* 7. Governing Law */}
             <div>
               <h2 className="text-xl sm:text-2xl font-bold text-[#0f2942] mb-4 flex items-center gap-2.5">
-                <span className="w-2 h-6 bg-[#0AA8DE] rounded-full inline-block" />
+                <span className="w-2 h-6 bg-[#E71B1E] rounded-full inline-block" />
                 7. Governing Law & Jurisdiction
               </h2>
               <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
@@ -164,15 +164,15 @@ export default function TermsOfServicePage() {
               </p>
               <div className="space-y-2 text-sm text-slate-700">
                 <p className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-[#0AA8DE] shrink-0" />
+                  <MapPin className="w-4 h-4 text-[#E71B1E] shrink-0" />
                   <span>3rd Cross St, opposite GMC Balayogi Stadium, Zicria Nagar, Yanam, Andhra Pradesh 533464</span>
                 </p>
                 <p className="flex items-center gap-2">
-                  <Phone className="w-4 h-4 text-[#0AA8DE] shrink-0" />
+                  <Phone className="w-4 h-4 text-[#E71B1E] shrink-0" />
                   <span>098853 49798 / 087903 49798</span>
                 </p>
                 <p className="flex items-center gap-2">
-                  <Mail className="w-4 h-4 text-[#0AA8DE] shrink-0" />
+                  <Mail className="w-4 h-4 text-[#E71B1E] shrink-0" />
                   <span>VRdental.yanam@gmail.com</span>
                 </p>
               </div>

@@ -32,7 +32,7 @@ export default function ConsultancyCard() {
     <div id="consultancy" className="relative z-30 max-w-[1060px] mx-auto px-4 sm:px-6 w-full -mt-20 lg:-mt-24">
       <div className="bg-white rounded-2xl md:rounded-3xl shadow-[0_20px_60px_rgba(15,23,42,0.12)] border border-slate-100 p-6 md:p-10 lg:p-12 relative overflow-hidden">
         {/* Top Brand Color Bar */}
-        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#0AA8DE] via-[#088ec0] to-[#E71B1E]" />
+        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#E71B1E] via-[#d6171a] to-[#0AA8DE]" />
         
         {/* Subtle decorative tooth line-art watermark on the left side */}
         <div className="absolute -left-6 top-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none">
@@ -48,7 +48,7 @@ export default function ConsultancyCard() {
             <h3 className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#0f2942] tracking-tight leading-[1.25]">
               Quick Online<br />
               Consultancy Only<br />
-              on <span className="text-[#0AA8DE] relative inline-block">Few Minutes<span className="absolute bottom-0 left-0 w-full h-[2.5px] bg-[#E71B1E] rounded-full" /></span>
+              on <span className="text-[#E71B1E] relative inline-block">Few Minutes<span className="absolute bottom-0 left-0 w-full h-[2.5px] bg-[#0AA8DE] rounded-full" /></span>
             </h3>
           </div>
 
@@ -82,7 +82,7 @@ export default function ConsultancyCard() {
                       placeholder="Name*"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full h-11 px-4 text-sm rounded-lg bg-[#f4f5f8] border border-transparent focus:border-[#0AA8DE] focus:bg-white text-slate-800 placeholder:text-slate-400 transition-all outline-none"
+                      className="w-full h-11 px-4 text-sm rounded-lg bg-[#f4f5f8] border border-transparent focus:border-[#E71B1E] focus:bg-white text-slate-800 placeholder:text-slate-400 transition-all outline-none"
                     />
                   </div>
                   <div>
@@ -92,7 +92,7 @@ export default function ConsultancyCard() {
                       placeholder="Phone Number*"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full h-11 px-4 text-sm rounded-lg bg-[#f4f5f8] border border-transparent focus:border-[#0AA8DE] focus:bg-white text-slate-800 placeholder:text-slate-400 transition-all outline-none"
+                      className="w-full h-11 px-4 text-sm rounded-lg bg-[#f4f5f8] border border-transparent focus:border-[#E71B1E] focus:bg-white text-slate-800 placeholder:text-slate-400 transition-all outline-none"
                     />
                   </div>
                   <div>
@@ -102,7 +102,7 @@ export default function ConsultancyCard() {
                       placeholder="Email*"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full h-11 px-4 text-sm rounded-lg bg-[#f4f5f8] border border-transparent focus:border-[#0AA8DE] focus:bg-white text-slate-800 placeholder:text-slate-400 transition-all outline-none"
+                      className="w-full h-11 px-4 text-sm rounded-lg bg-[#f4f5f8] border border-transparent focus:border-[#E71B1E] focus:bg-white text-slate-800 placeholder:text-slate-400 transition-all outline-none"
                     />
                   </div>
                   <div>
@@ -111,16 +111,16 @@ export default function ConsultancyCard() {
                       placeholder="Address"
                       value={formData.address}
                       onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                      className="w-full h-11 px-4 text-sm rounded-lg bg-[#f4f5f8] border border-transparent focus:border-[#0AA8DE] focus:bg-white text-slate-800 placeholder:text-slate-400 transition-all outline-none"
+                      className="w-full h-11 px-4 text-sm rounded-lg bg-[#f4f5f8] border border-transparent focus:border-[#E71B1E] focus:bg-white text-slate-800 placeholder:text-slate-400 transition-all outline-none"
                     />
                   </div>
                 </div>
 
-                {/* Full-width blue button */}
+                {/* Full-width red button */}
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full h-12 mt-1 rounded-lg bg-[#0AA8DE] hover:bg-[#088ec0] text-white font-bold text-sm sm:text-base hover:shadow-lg active:scale-[0.99] transition-all duration-200 shadow-md flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
+                  className="w-full h-12 mt-1 rounded-lg bg-[#E71B1E] hover:bg-[#c41215] text-white font-bold text-sm sm:text-base hover:shadow-lg active:scale-[0.99] transition-all duration-200 shadow-md flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
                 >
                   {loading ? (
                     <span className="inline-block animate-spin rounded-full h-4 w-4 border-2 border-white border-t-transparent" />

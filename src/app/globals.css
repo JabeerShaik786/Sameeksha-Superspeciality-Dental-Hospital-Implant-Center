@@ -4,9 +4,9 @@
   --background: #FFFFFF;
   --foreground: #0F172A;
   
-  --primary: #0AA8DE;
-  --secondary: #088ec0;
-  --accent: #E71B1E;
+  --primary: #E71B1E;
+  --secondary: #0AA8DE;
+  --accent: #0AA8DE;
   --success: #16A34A;
   --card: #FFFFFF;
   --dark-text: #0F172A;
@@ -97,5 +97,5 @@ input, textarea, select {
 }
 input:focus, textarea:focus, select:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(10, 168, 222, 0.15);
+  box-shadow: 0 0 0 3px rgba(231, 27, 30, 0.15);
 }

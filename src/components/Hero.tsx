@@ -39,12 +39,12 @@ export default function Hero() {
       <div className="max-w-[1360px] mx-auto w-full px-6 md:px-12 lg:px-20 relative z-10">
         <div className="max-w-xl text-left flex flex-col items-start pt-6 sm:pt-10">
           
-          {/* Small Uppercase Label with Red Accent Underline under "PERFECT" */}
+          {/* Small Uppercase Label with Blue Accent Underline under "PERFECT" */}
           <div className="mb-4">
             <span className="relative inline-block text-xs md:text-sm font-extrabold tracking-[0.18em] text-[#0f2942] uppercase pb-1.5">
-              <span className="relative text-[#0AA8DE]">
+              <span className="relative text-[#E71B1E]">
                 PERFECT
-                <span className="absolute bottom-0 left-0 w-full h-[3px] bg-[#E71B1E] rounded-full" />
+                <span className="absolute bottom-0 left-0 w-full h-[3px] bg-[#0AA8DE] rounded-full" />
               </span>
               <span className="ml-2 font-bold text-[#0f2942]">SMILE</span>
             </span>
@@ -52,16 +52,16 @@ export default function Hero() {
 
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-extrabold text-[#0f2942] tracking-tight leading-[1.12] mb-7">
-            Your <span className="text-[#0AA8DE]">Journey</span> to a perfect<br />
+            Your <span className="text-[#E71B1E]">Journey</span> to a perfect<br />
             smile begins with us!
           </h1>
 
-          {/* Primary Brand Blue Contact Us Button */}
+          {/* Primary Brand Red Contact Us Button */}
           <div>
             <a
               href="#contact"
               onClick={scrollToContact}
-              className="inline-flex items-center justify-center px-9 py-3.5 bg-[#0AA8DE] hover:bg-[#088ec0] text-white font-bold text-sm sm:text-base rounded-lg shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-95 transition-all duration-200"
+              className="inline-flex items-center justify-center px-9 py-3.5 bg-[#E71B1E] hover:bg-[#c41215] text-white font-bold text-sm sm:text-base rounded-lg shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-95 transition-all duration-200"
             >
               Contact Us
             </a>

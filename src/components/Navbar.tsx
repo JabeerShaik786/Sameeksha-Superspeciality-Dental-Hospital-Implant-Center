@@ -92,10 +92,10 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full shadow-xs">
-      {/* 1. Thin Blue Top Gradient Strip */}
-      <div className="w-full h-8 bg-gradient-to-r from-[#0AA8DE] via-[#0996c7] to-[#20bbf2] text-white flex items-center justify-end px-6 md:px-12 lg:px-20 text-xs font-medium tracking-wide">
+      {/* 1. Thin Red Top Gradient Strip */}
+      <div className="w-full h-8 bg-gradient-to-r from-[#c41215] via-[#E71B1E] to-[#0AA8DE] text-white flex items-center justify-end px-6 md:px-12 lg:px-20 text-xs font-medium tracking-wide">
         <div className="flex items-center gap-2">
-          <Phone className="w-3.5 h-3.5 fill-current" />
+          <Phone className="w-3.5 h-3.5 fill-current text-white" />
           <a href="tel:9885349798" className="hover:underline transition-all">
             9885349798
           </a>
@@ -142,12 +142,12 @@ export default function Navbar() {
                   href={item.href}
                   onClick={(e) => scrollToSection(e, item.href)}
                   className={`relative text-[15px] font-bold transition-colors duration-200 py-1 ${
-                    isActive ? "text-[#0AA8DE]" : "text-[#1e293b] hover:text-[#0AA8DE]"
+                    isActive ? "text-[#E71B1E]" : "text-[#1e293b] hover:text-[#E71B1E]"
                   }`}
                 >
                   {item.name}
                   {isActive && (
-                    <span className="absolute bottom-0 left-0 w-full h-[2.5px] bg-[#0AA8DE] rounded-full" />
+                    <span className="absolute bottom-0 left-0 w-full h-[2.5px] bg-[#E71B1E] rounded-full" />
                   )}
                 </a>
               );
@@ -159,7 +159,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={(e) => scrollToSection(e, "#contact")}
-              className="inline-flex items-center justify-center px-6 py-2.5 text-[15px] font-bold text-white bg-[#0AA8DE] hover:bg-[#088ec0] rounded-lg transition-all duration-200 shadow-sm hover:shadow-md active:scale-95"
+              className="inline-flex items-center justify-center px-6 py-2.5 text-[15px] font-bold text-white bg-[#E71B1E] hover:bg-[#c41215] rounded-lg transition-all duration-200 shadow-sm hover:shadow-md active:scale-95"
             >
               Contact Us
             </a>
@@ -170,13 +170,13 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={(e) => scrollToSection(e, "#contact")}
-              className="px-4 py-2 text-xs font-bold text-white bg-[#0AA8DE] hover:bg-[#088ec0] rounded-lg shadow-xs"
+              className="px-4 py-2 text-xs font-bold text-white bg-[#E71B1E] hover:bg-[#c41215] rounded-lg shadow-xs"
             >
               Contact Us
             </a>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-slate-700 hover:text-[#0AA8DE] transition-colors"
+              className="p-2 text-slate-700 hover:text-[#E71B1E] transition-colors"
               aria-label="Toggle Navigation"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -195,7 +195,7 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={(e) => scrollToSection(e, item.href)}
-                className="py-2 text-base font-semibold text-slate-800 hover:text-[#0AA8DE] transition-colors border-b border-slate-100"
+                className="py-2 text-base font-semibold text-slate-800 hover:text-[#E71B1E] transition-colors border-b border-slate-100"
               >
                 {item.name}
               </a>
@@ -203,13 +203,13 @@ export default function Navbar() {
           </div>
           <div className="pt-2 flex flex-col gap-3">
             <div className="flex items-center gap-2 text-xs text-slate-600 font-medium">
-              <Phone className="w-3.5 h-3.5 text-[#0AA8DE]" />
+              <Phone className="w-3.5 h-3.5 text-[#E71B1E]" />
               <span>9885349798 / 8790349798</span>
             </div>
             <a
               href="#contact"
               onClick={(e) => scrollToSection(e, "#contact")}
-              className="w-full py-2.5 text-center text-sm font-bold text-white bg-gradient-to-r from-[#0AA8DE] to-[#0895c6] rounded-lg shadow-sm"
+              className="w-full py-2.5 text-center text-sm font-bold text-white bg-gradient-to-r from-[#E71B1E] to-[#c41215] rounded-lg shadow-sm"
             >
               Get Online Consultancy
             </a>
