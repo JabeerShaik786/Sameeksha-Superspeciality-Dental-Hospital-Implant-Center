@@ -34,8 +34,8 @@ export default function AboutSection() {
           <div className="lg:col-span-6 w-full">
             <div className="relative w-full aspect-[4/3] rounded-2xl md:rounded-3xl overflow-hidden shadow-xl shadow-slate-200/70 border border-slate-100">
               <Image
-                src={getAssetPath("/about_reception.jpg")}
-                alt="VR Dental Care Clinic Interior Reception"
+                src={getAssetPath("/about_treatment_room.jpg")}
+                alt="Sameeksha Super Speciality Dental Hospital Treatment Room"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
