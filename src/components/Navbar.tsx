@@ -93,18 +93,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full shadow-xs">
       {/* 1. Thin Red Top Gradient Strip */}
-      <div className="w-full h-8 bg-gradient-to-r from-[#c41215] via-[#E71B1E] to-[#0AA8DE] text-white flex items-center justify-end px-6 md:px-12 lg:px-20 text-xs font-medium tracking-wide">
-        <div className="flex items-center gap-2">
-          <Phone className="w-3.5 h-3.5 fill-current text-white" />
-          <a href="tel:9885349798" className="hover:underline transition-all">
-            9885349798
-          </a>
-          <span className="opacity-70 px-0.5">|</span>
-          <a href="tel:8790349798" className="hover:underline transition-all">
-            8790349798
-          </a>
-        </div>
-      </div>
+      <div className="w-full h-8 bg-gradient-to-r from-[#c41215] via-[#E71B1E] to-[#0AA8DE] text-white flex items-center justify-end px-6 md:px-12 lg:px-20 text-xs font-medium tracking-wide" />
 
       {/* 2. Main White Navigation Bar */}
       <div className="w-full bg-white relative h-[72px] flex items-center">
@@ -157,8 +146,7 @@ export default function Navbar() {
           {/* Contact Us Button */}
           <div className="hidden lg:block shrink-0">
             <a
-              href="#contact"
-              onClick={(e) => scrollToSection(e, "#contact")}
+              href="tel:08885999857"
               className="inline-flex items-center justify-center px-6 py-2.5 text-[15px] font-bold text-white bg-[#E71B1E] hover:bg-[#c41215] rounded-lg transition-all duration-200 shadow-sm hover:shadow-md active:scale-95"
             >
               Contact Us
@@ -168,8 +156,7 @@ export default function Navbar() {
           {/* Mobile Hamburger Toggle */}
           <div className="flex lg:hidden items-center gap-3">
             <a
-              href="#contact"
-              onClick={(e) => scrollToSection(e, "#contact")}
+              href="tel:08885999857"
               className="px-4 py-2 text-xs font-bold text-white bg-[#E71B1E] hover:bg-[#c41215] rounded-lg shadow-xs"
             >
               Contact Us
@@ -202,10 +189,13 @@ export default function Navbar() {
             ))}
           </div>
           <div className="pt-2 flex flex-col gap-3">
-            <div className="flex items-center gap-2 text-xs text-slate-600 font-medium">
+            <a
+              href="tel:08885999857"
+              className="flex items-center gap-2 text-xs text-slate-700 font-semibold hover:text-[#E71B1E] transition-colors"
+            >
               <Phone className="w-3.5 h-3.5 text-[#E71B1E]" />
-              <span>9885349798 / 8790349798</span>
-            </div>
+              <span>088859 99857</span>
+            </a>
             <a
               href="#contact"
               onClick={(e) => scrollToSection(e, "#contact")}
