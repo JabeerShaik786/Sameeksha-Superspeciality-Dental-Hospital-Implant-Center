@@ -35,9 +35,12 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-[#0F172A] text-white/90 pt-20 pb-10 border-t border-white/5 relative overflow-hidden">
+      {/* Top Brand Color Stripe */}
+      <div className="w-full h-1.5 bg-gradient-to-r from-[#0AA8DE] via-[#088ec0] to-[#E71B1E] absolute top-0 left-0" />
+
       {/* Background radial glow */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-[#0AA8DE]/10 blur-[150px] -z-10 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-[#0AA8DE]/5 blur-[120px] -z-10 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-[#0AA8DE]/15 blur-[150px] -z-10 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-[#0AA8DE]/10 blur-[120px] -z-10 pointer-events-none" />
 
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         {/* Brand Column */}
@@ -47,8 +50,8 @@ export default function Footer() {
             onClick={(e) => handleLinkClick(e, "#home")}
             className="flex items-center gap-2 group cursor-pointer"
           >
-            <div className="w-10 h-10 rounded-full bg-[#0AA8DE]/20 text-[#0AA8DE] flex items-center justify-center">
-              <Smile className="w-5 h-5 text-[#0AA8DE]" />
+            <div className="w-10 h-10 rounded-full bg-[#0AA8DE] text-white flex items-center justify-center shadow-md">
+              <Smile className="w-5 h-5 text-white" />
             </div>
             <div className="flex flex-col">
               <span className="font-heading font-extrabold text-sm tracking-tight text-white leading-tight uppercase">
@@ -63,7 +66,7 @@ export default function Footer() {
             Transforming Smiles, Transforming Lives. Professional and personalized dental care in a modern and comfortable environment.
           </p>
           <div className="flex items-center gap-3">
-            <span className="text-[12px] bg-[#0AA8DE]/15 text-[#0AA8DE] px-3.5 py-1 rounded-full font-semibold border border-[#0AA8DE]/20 flex items-center gap-1.5">
+            <span className="text-[12px] bg-[#0AA8DE]/15 text-[#0AA8DE] px-3.5 py-1 rounded-full font-semibold border border-[#0AA8DE]/30 flex items-center gap-1.5">
               <Clock className="w-3.5 h-3.5" />
               Hours: Monday – Saturday: 9:00 AM – 8:00 PM (Sunday: Closed)
             </span>
@@ -72,8 +75,9 @@ export default function Footer() {
 
         {/* Quick Links Column */}
         <div className="flex flex-col gap-5 text-left">
-          <h4 className="font-heading font-bold text-base text-white tracking-wide uppercase">
+          <h4 className="font-heading font-bold text-base text-white tracking-wide uppercase flex items-center gap-2">
             Navigation
+            <span className="w-1.5 h-1.5 rounded-full bg-[#E71B1E]" />
           </h4>
           <ul className="flex flex-col gap-3.5 text-sm text-white/60">
             {[
@@ -99,8 +103,9 @@ export default function Footer() {
 
         {/* Services Column */}
         <div className="flex flex-col gap-5 text-left">
-          <h4 className="font-heading font-bold text-base text-white tracking-wide uppercase">
+          <h4 className="font-heading font-bold text-base text-white tracking-wide uppercase flex items-center gap-2">
             Services
+            <span className="w-1.5 h-1.5 rounded-full bg-[#E71B1E]" />
           </h4>
           <ul className="flex flex-col gap-3.5 text-sm text-white/60">
             {[
@@ -126,8 +131,9 @@ export default function Footer() {
 
         {/* Contact Column */}
         <div className="flex flex-col gap-5 text-left">
-          <h4 className="font-heading font-bold text-base text-white tracking-wide uppercase">
+          <h4 className="font-heading font-bold text-base text-white tracking-wide uppercase flex items-center gap-2">
             Contact Us
+            <span className="w-1.5 h-1.5 rounded-full bg-[#E71B1E]" />
           </h4>
           <div className="flex flex-col gap-4 text-sm text-white/60">
             <div className="flex gap-3">
@@ -136,7 +142,7 @@ export default function Footer() {
             </div>
             <div className="flex gap-3">
               <Phone className="w-5 h-5 text-[#0AA8DE] shrink-0 mt-0.5" />
-              <a href="tel:09885349798" className="hover:text-white transition-colors">
+              <a href="tel:09885349798" className="hover:text-[#0AA8DE] transition-colors">
                 098853 49798
               </a>
             </div>
@@ -144,18 +150,18 @@ export default function Footer() {
               <Mail className="w-5 h-5 text-[#0AA8DE] shrink-0 mt-0.5" />
               <a
                 href="mailto:VRdental.yanam@gmail.com"
-                className="hover:text-white transition-colors"
+                className="hover:text-[#0AA8DE] transition-colors"
               >
                 VRdental.yanam@gmail.com
               </a>
             </div>
             <div className="flex gap-3">
-              <MessageSquare className="w-5 h-5 text-green-400 shrink-0 mt-0.5" />
+              <MessageSquare className="w-5 h-5 text-[#25D366] shrink-0 mt-0.5" />
               <a
                 href="https://wa.me/919885349798"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-white transition-colors"
+                className="hover:text-[#25D366] transition-colors"
               >
                 Chat on WhatsApp
               </a>

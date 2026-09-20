@@ -145,22 +145,25 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   onClick={(e) => scrollToSection(e, item.href)}
-                  className={`text-[15px] font-semibold transition-colors duration-200 ${
+                  className={`relative text-[15px] font-bold transition-colors duration-200 py-1 ${
                     isActive ? "text-[#0AA8DE]" : "text-[#1e293b] hover:text-[#0AA8DE]"
                   }`}
                 >
                   {item.name}
+                  {isActive && (
+                    <span className="absolute bottom-0 left-0 w-full h-[2.5px] bg-[#0AA8DE] rounded-full" />
+                  )}
                 </a>
               );
             })}
           </nav>
 
-          {/* Contact Us Button (Figma style: White bg, blue border, blue text) */}
+          {/* Contact Us Button */}
           <div className="hidden lg:block shrink-0">
             <a
               href="#contact"
               onClick={(e) => scrollToSection(e, "#contact")}
-              className="inline-flex items-center justify-center px-6 py-2 text-[15px] font-semibold text-[#0AA8DE] bg-white border border-[#0AA8DE] rounded-lg hover:bg-[#0AA8DE] hover:text-white transition-all duration-200 shadow-2xs hover:shadow-xs active:scale-95"
+              className="inline-flex items-center justify-center px-6 py-2.5 text-[15px] font-bold text-white bg-[#0AA8DE] hover:bg-[#088ec0] rounded-lg transition-all duration-200 shadow-sm hover:shadow-md active:scale-95"
             >
               Contact Us
             </a>
@@ -171,7 +174,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={(e) => scrollToSection(e, "#contact")}
-              className="px-3.5 py-1.5 text-xs font-semibold text-[#0AA8DE] border border-[#0AA8DE] rounded-md"
+              className="px-4 py-2 text-xs font-bold text-white bg-[#0AA8DE] hover:bg-[#088ec0] rounded-lg shadow-xs"
             >
               Contact Us
             </a>

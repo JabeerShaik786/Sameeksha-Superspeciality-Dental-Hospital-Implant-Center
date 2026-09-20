@@ -55,7 +55,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#087CE2",
+  themeColor: "#0AA8DE",
   width: "device-width",
   initialScale: 1,
 };
@@ -72,7 +72,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className="min-h-full flex flex-col bg-white text-[#0F172A] selection:bg-primary/30 font-sans relative z-0"
+        className="min-h-full flex flex-col bg-white text-[#0F172A] selection:bg-[#0AA8DE] selection:text-white font-sans relative z-0"
         style={{ zIndex: 0 }}
         suppressHydrationWarning
       >

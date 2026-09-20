@@ -41,12 +41,12 @@ export default function Hero() {
           
           {/* Small Uppercase Label with Red Accent Underline under "PERFECT" */}
           <div className="mb-4">
-            <span className="relative inline-block text-xs md:text-sm font-bold tracking-[0.18em] text-[#0f2942] uppercase pb-1.5">
-              <span className="relative">
+            <span className="relative inline-block text-xs md:text-sm font-extrabold tracking-[0.18em] text-[#0f2942] uppercase pb-1.5">
+              <span className="relative text-[#0AA8DE]">
                 PERFECT
-                <span className="absolute bottom-0 left-0 w-full h-[2.5px] bg-[#E71B1E] rounded-full" />
+                <span className="absolute bottom-0 left-0 w-full h-[3px] bg-[#E71B1E] rounded-full" />
               </span>
-              <span className="ml-2 font-semibold text-[#1e293b]">SMILE</span>
+              <span className="ml-2 font-bold text-[#0f2942]">SMILE</span>
             </span>
           </div>
 
@@ -56,12 +56,12 @@ export default function Hero() {
             smile begins with us!
           </h1>
 
-          {/* Blue Gradient Contact Us Button */}
+          {/* Primary Brand Blue Contact Us Button */}
           <div>
             <a
               href="#contact"
               onClick={scrollToContact}
-              className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-[#0AA8DE] to-[#0895c6] text-white font-semibold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg hover:opacity-95 active:scale-95 transition-all duration-200"
+              className="inline-flex items-center justify-center px-9 py-3.5 bg-[#0AA8DE] hover:bg-[#088ec0] text-white font-bold text-sm sm:text-base rounded-lg shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-95 transition-all duration-200"
             >
               Contact Us
             </a>

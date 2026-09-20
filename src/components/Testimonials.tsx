@@ -194,15 +194,18 @@ export default function Testimonials() {
                 key={`${item.id}-${idx}`}
                 className="w-full md:w-1/2 lg:w-1/3 px-3 shrink-0 flex"
               >
-                <div className="w-full bg-white rounded-2xl p-6 sm:p-7 shadow-[0_8px_30px_rgba(15,23,42,0.04)] border border-slate-100 flex flex-col justify-between text-left hover:shadow-lg transition-shadow duration-300 h-full">
-                  {/* Review Quote */}
-                  <p className="text-xs sm:text-[13px] text-slate-600 leading-relaxed font-normal mb-8">
-                    {item.quote}
-                  </p>
+                <div className="w-full bg-white rounded-2xl p-6 sm:p-7 shadow-[0_8px_30px_rgba(10,168,222,0.06)] border border-[#0AA8DE]/20 hover:border-[#0AA8DE] flex flex-col justify-between text-left hover:shadow-xl transition-all duration-300 h-full relative group">
+                  {/* Accent bar & Review Quote */}
+                  <div>
+                    <div className="w-8 h-1 bg-[#E71B1E] rounded-full mb-3" />
+                    <p className="text-xs sm:text-[13px] text-slate-600 leading-relaxed font-normal mb-8">
+                      {item.quote}
+                    </p>
+                  </div>
 
                   {/* Author & Rating */}
-                  <div className="flex items-center gap-3.5 pt-4 border-t border-slate-100/80">
-                    <div className="relative w-11 h-11 rounded-full overflow-hidden shrink-0 border border-slate-200">
+                  <div className="flex items-center gap-3.5 pt-4 border-t border-slate-100">
+                    <div className="relative w-11 h-11 rounded-full overflow-hidden shrink-0 border-2 border-[#0AA8DE]">
                       <Image
                         src={getAssetPath(item.avatar)}
                         alt={item.name}
@@ -215,8 +218,8 @@ export default function Testimonials() {
                       <h4 className="font-bold text-sm text-[#0f2942] leading-tight">
                         {item.name}
                       </h4>
-                      {/* 5 Yellow Stars */}
-                      <div className="flex text-amber-400 gap-0.5 mt-1">
+                      {/* 5 Accent Red Stars */}
+                      <div className="flex text-[#E71B1E] gap-0.5 mt-1">
                         {[...Array(5)].map((_, i) => (
                           <Star key={i} className="w-3.5 h-3.5 fill-current" />
                         ))}
@@ -235,7 +238,7 @@ export default function Testimonials() {
             href="https://www.google.com/search?q=vr+dental+clinic+yanam&rlz=1C1ONGR_en-GBIN1218IN1220&oq=vr+dental&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIHCAMQABiABDIHCAQQABiABDINCAUQLhivARjHARiABDINCAcQLhivARjHARiABDINCAgQLhivARjHARiABDINCAkQLhivARjHARiABNIBCDU3ODZqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x3a37f5629e08049d:0x57e44639afd7d3a6,1,,,,"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-9 py-2.5 bg-gradient-to-r from-[#0AA8DE] to-[#0895c6] text-white font-semibold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg hover:opacity-95 active:scale-95 transition-all duration-200"
+            className="inline-flex items-center justify-center px-9 py-2.5 bg-[#0AA8DE] hover:bg-[#088ec0] text-white font-bold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-95 transition-all duration-200"
           >
             View All
           </a>

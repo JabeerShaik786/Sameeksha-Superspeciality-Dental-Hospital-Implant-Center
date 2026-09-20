@@ -49,10 +49,10 @@ export default function AboutSection() {
           <div className="lg:col-span-6 flex flex-col items-start text-left">
             {/* 14 YEARS OF EXCELLENCE with red accent underline under 14 YEARS */}
             <div className="mb-4">
-              <span className="relative inline-block text-xs md:text-sm font-bold tracking-[0.16em] uppercase pb-1 text-[#0f2942]">
+              <span className="relative inline-block text-xs md:text-sm font-extrabold tracking-[0.16em] uppercase pb-1 text-[#0f2942]">
                 <span className="relative text-[#0AA8DE]">
                   14 YEARS
-                  <span className="absolute bottom-0 left-0 w-full h-[2.5px] bg-[#E71B1E] rounded-full" />
+                  <span className="absolute bottom-0 left-0 w-full h-[3px] bg-[#E71B1E] rounded-full" />
                 </span>
                 <span className="ml-2 font-bold text-[#0f2942]">OF EXCELLENCE</span>
               </span>
@@ -69,12 +69,12 @@ export default function AboutSection() {
               At VR Dental Care, we have been transforming smiles and enhancing oral health for over 14 years. Established in 2011, our clinic has been a trusted name in advanced dental care, providing high-quality treatments with a patient-first approach.
             </p>
 
-            {/* Blue Gradient Read More Button */}
+            {/* Primary Blue Read More Button */}
             <div>
               <a
                 href="#contact"
                 onClick={scrollToContact}
-                className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-[#0AA8DE] to-[#0895c6] text-white font-semibold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg hover:opacity-95 active:scale-95 transition-all duration-200 cursor-pointer"
+                className="inline-flex items-center justify-center px-8 py-3 bg-[#0AA8DE] hover:bg-[#088ec0] text-white font-bold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg active:scale-95 transition-all duration-200 cursor-pointer"
               >
                 Read More
               </a>

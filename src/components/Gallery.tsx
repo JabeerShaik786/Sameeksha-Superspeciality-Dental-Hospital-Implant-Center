@@ -32,15 +32,18 @@ export default function Gallery() {
       <div className="max-w-[1360px] mx-auto px-6 md:px-12 lg:px-20 relative z-20 text-center">
         
         {/* Section Heading */}
-        <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#0f2942] tracking-tight mb-12 lg:mb-16">
-          Gallery
-        </h2>
+        <div className="inline-block mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#0f2942] tracking-tight">
+            Gallery
+          </h2>
+          <div className="w-14 h-1 bg-[#E71B1E] mx-auto mt-2.5 rounded-full" />
+        </div>
 
         {/* Gallery 1 + 4 Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 md:gap-6 items-stretch max-w-[1100px] mx-auto">
           
           {/* LEFT: One Large Clinic Operatory Image (~50% width) */}
-          <div className="lg:col-span-6 relative w-full aspect-[4/3] lg:aspect-auto lg:h-[430px] rounded-2xl md:rounded-3xl overflow-hidden shadow-md border border-slate-100 group">
+          <div className="lg:col-span-6 relative w-full aspect-[4/3] lg:aspect-auto lg:h-[430px] rounded-2xl md:rounded-3xl overflow-hidden shadow-md border border-slate-100 hover:border-[#0AA8DE] hover:shadow-xl transition-all duration-300 group">
             <Image
               src={getAssetPath("/gallery/chair.jpg")}
               alt="VR Dental Care Modern Operatory Chair Room"
@@ -56,7 +59,7 @@ export default function Gallery() {
           <div className="lg:col-span-6 grid grid-cols-2 gap-4 md:gap-5 w-full">
             
             {/* Top-Left: Exterior Building */}
-            <div className="relative w-full aspect-[4/3] lg:h-[202px] rounded-2xl overflow-hidden shadow-sm border border-slate-100 group">
+            <div className="relative w-full aspect-[4/3] lg:h-[202px] rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:border-[#0AA8DE] hover:shadow-md transition-all duration-300 group">
               <Image
                 src={getAssetPath("/gallery/building.jpg")}
                 alt="VR Dental Care Building Exterior"
@@ -68,7 +71,7 @@ export default function Gallery() {
             </div>
 
             {/* Top-Right: Reception Desk */}
-            <div className="relative w-full aspect-[4/3] lg:h-[202px] rounded-2xl overflow-hidden shadow-sm border border-slate-100 group">
+            <div className="relative w-full aspect-[4/3] lg:h-[202px] rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:border-[#0AA8DE] hover:shadow-md transition-all duration-300 group">
               <Image
                 src={getAssetPath("/gallery/reception.jpg")}
                 alt="VR Dental Care Clinic Reception Desk"
@@ -80,7 +83,7 @@ export default function Gallery() {
             </div>
 
             {/* Bottom-Left: OPG / X-ray Unit */}
-            <div className="relative w-full aspect-[4/3] lg:h-[202px] rounded-2xl overflow-hidden shadow-sm border border-slate-100 group">
+            <div className="relative w-full aspect-[4/3] lg:h-[202px] rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:border-[#0AA8DE] hover:shadow-md transition-all duration-300 group">
               <Image
                 src={getAssetPath("/gallery/xray.jpg")}
                 alt="VR Dental Care Digital X-Ray Setup"
@@ -92,7 +95,7 @@ export default function Gallery() {
             </div>
 
             {/* Bottom-Right: 3D Intraoral Scanner Laptop Setup */}
-            <div className="relative w-full aspect-[4/3] lg:h-[202px] rounded-2xl overflow-hidden shadow-sm border border-slate-100 group">
+            <div className="relative w-full aspect-[4/3] lg:h-[202px] rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:border-[#0AA8DE] hover:shadow-md transition-all duration-300 group">
               <Image
                 src={getAssetPath("/gallery/scanner.png")}
                 alt="VR Dental Care 3D Intraoral Scanner"
@@ -112,7 +115,7 @@ export default function Gallery() {
           <a
             href="#contact"
             onClick={scrollToContact}
-            className="inline-flex items-center justify-center px-9 py-2.5 bg-gradient-to-r from-[#0AA8DE] to-[#0895c6] text-white font-semibold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg hover:opacity-95 active:scale-95 transition-all duration-200"
+            className="inline-flex items-center justify-center px-9 py-2.5 bg-[#0AA8DE] hover:bg-[#088ec0] text-white font-bold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-95 transition-all duration-200"
           >
             View All
           </a>

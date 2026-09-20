@@ -25,9 +25,9 @@ function ContactCard({ icon: Icon, title, details }: ContactCardProps) {
   return (
     <motion.div
       whileHover={{ y: -4 }}
-      className="p-5 rounded-[18px] border transition-all duration-300 flex items-start gap-4 bg-white border-borders/50 shadow-sm hover:shadow-md hover:border-primary/10"
+      className="p-5 rounded-[18px] border transition-all duration-300 flex items-start gap-4 bg-white border-borders/60 shadow-sm hover:shadow-md hover:border-[#0AA8DE]/30"
     >
-      <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 bg-primary/5 text-primary">
+      <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 bg-[#0AA8DE]/10 text-[#0AA8DE]">
         <Icon className="w-5 h-5" />
       </div>
       <div className="flex flex-col text-left">
@@ -37,14 +37,14 @@ function ContactCard({ icon: Icon, title, details }: ContactCardProps) {
         {title === "Email" ? (
           <a
             href="mailto:VRdental.yanam@gmail.com"
-            className="text-sm font-semibold text-dark-text mt-1 hover:text-primary transition-colors"
+            className="text-sm font-semibold text-dark-text mt-1 hover:text-[#0AA8DE] transition-colors"
           >
             {details}
           </a>
         ) : title === "Reception & Booking" ? (
           <a
             href="tel:09885349798"
-            className="text-sm font-semibold text-dark-text mt-1 hover:text-primary transition-colors"
+            className="text-sm font-semibold text-dark-text mt-1 hover:text-[#0AA8DE] transition-colors"
           >
             {details}
           </a>
@@ -90,18 +90,18 @@ export default function ContactSection() {
         
         {/* Section Heading */}
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-20">
-          <span className="text-sm font-bold text-primary uppercase tracking-widest mb-3">
+          <span className="text-sm font-bold text-[#0AA8DE] uppercase tracking-widest mb-3">
             Appointment Booking
           </span>
           <h2 className="font-heading font-extrabold text-3xl md:text-[48px] text-dark-text tracking-tight leading-tight">
             Book Your Dental Appointment
           </h2>
-          <div className="h-[3px] w-12 bg-primary rounded-full mt-6" />
+          <div className="h-[3.5px] w-14 bg-[#E71B1E] rounded-full mt-6" />
         </div>
 
         {/* Form Container */}
         <div className="max-w-[800px] mx-auto w-full mb-24">
-          <div className="rounded-[28px] p-8 md:p-12 bg-white border border-borders/60 shadow-xl shadow-primary/[0.01] relative min-h-[580px] flex flex-col justify-center">
+          <div className="rounded-[28px] p-8 md:p-12 bg-white border border-[#0AA8DE]/20 shadow-xl shadow-[#0AA8DE]/5 relative min-h-[580px] flex flex-col justify-center">
               
               <AnimatePresence mode="wait">
                 {!isSubmitted ? (
@@ -267,7 +267,7 @@ export default function ContactSection() {
                         <button
                           type="submit"
                           disabled={isSubmitting}
-                          className="w-full h-14 bg-primary hover:bg-[#066bbd] text-white font-bold text-base rounded-2xl shadow-lg shadow-primary/15 hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 flex items-center justify-center gap-2.5 disabled:opacity-75 cursor-pointer hover:-translate-y-0.5 active:translate-y-0"
+                          className="w-full h-14 bg-[#0AA8DE] hover:bg-[#088ec0] text-white font-bold text-base rounded-2xl shadow-lg shadow-[#0AA8DE]/25 hover:shadow-xl hover:shadow-[#0AA8DE]/35 transition-all duration-300 flex items-center justify-center gap-2.5 disabled:opacity-75 cursor-pointer hover:-translate-y-0.5 active:translate-y-0"
                         >
                           {isSubmitting ? (
                             <span className="w-5 h-5 rounded-full border-2 border-white border-t-transparent animate-spin" />
@@ -281,7 +281,7 @@ export default function ContactSection() {
                         
                         <div className="flex items-center justify-center gap-2 text-sm text-gray-text font-medium">
                           <span>Or call directly:</span>
-                          <a href="tel:09885349798" className="text-primary font-bold hover:underline">
+                          <a href="tel:09885349798" className="text-[#0AA8DE] font-bold hover:underline">
                             Call 098853 49798
                           </a>
                         </div>
@@ -309,7 +309,7 @@ export default function ContactSection() {
                     </p>
                     
                     <div className="p-4 rounded-2xl bg-slate-50 border border-borders/60 flex items-center gap-3 text-left w-full max-w-sm mb-8">
-                      <Calendar className="w-5 h-5 text-primary shrink-0" />
+                      <Calendar className="w-5 h-5 text-[#0AA8DE] shrink-0" />
                       <span className="text-xs md:text-sm font-semibold text-dark-text">
                         A confirmation SMS and email summary have been sent.
                       </span>
