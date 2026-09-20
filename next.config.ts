@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/VR-Dental-Care-Dental-Implant-Centre.",
-  assetPrefix: "/VR-Dental-Care-Dental-Implant-Centre.",
+  basePath: "/Sameeksha-Superspeciality-Dental-Hospital-Implant-Center",
+  assetPrefix: "/Sameeksha-Superspeciality-Dental-Hospital-Implant-Center",
   turbopack: {
     root: path.resolve(__dirname),
   },

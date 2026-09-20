@@ -1,18 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Phone, Calendar, Smile } from "lucide-react";
 import Image from "next/image";
 import { getAssetPath } from "@/lib/getAssetPath";
 
 export default function AppointmentCTA() {
-  const handleScrollToBooking = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const scrollToBooking = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const target = document.querySelector("#appointment");
+    const target = document.querySelector("#consultancy") || document.querySelector("#contact");
     if (target) {
-      const headerEl = document.querySelector("header");
-      const navbarHeight = headerEl ? headerEl.getBoundingClientRect().height + 16 : 96;
-      const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight - 12;
+      const targetPosition = target.getBoundingClientRect().top + window.scrollY - 90;
       window.scrollTo({
         top: Math.max(0, targetPosition),
         behavior: "smooth",
@@ -21,62 +17,57 @@ export default function AppointmentCTA() {
   };
 
   return (
-    <section className="py-12 px-6 md:px-12 max-w-[1440px] mx-auto">
-      <div className="relative rounded-[32px] overflow-hidden bg-gradient-to-r from-primary to-secondary text-white py-16 px-8 md:p-20 shadow-xl shadow-primary/10">
-        {/* Background Decorative Rings */}
-        <div className="absolute top-[-20%] right-[-10%] w-[400px] h-[400px] rounded-full border border-white/5 pointer-events-none" />
-        <div className="absolute bottom-[-30%] left-[20%] w-[500px] h-[500px] rounded-full bg-white/[0.02] blur-2xl pointer-events-none" />
-
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
-          {/* Content Column */}
-          <div className="lg:col-span-8 flex flex-col items-start text-left">
-            {/* Pulsing badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/10 mb-6">
-              <Smile className="w-4 h-4 text-white animate-pulse" />
-              <span className="text-xs font-bold uppercase tracking-wider text-white">
-                Prioritize Your Dental Health
-              </span>
-            </div>
-
-            <h2 className="font-heading font-extrabold text-3xl md:text-5xl leading-tight tracking-tight max-w-2xl mb-6">
-              Take the First Step Towards a Healthier Smile
+    <section
+      id="contact"
+      className="py-20 lg:py-24 relative overflow-hidden text-white"
+      style={{
+        background: "linear-gradient(160deg, #245b83 0%, #2e6993 50%, #1e4d70 100%)",
+      }}
+    >
+      <div className="max-w-[1360px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          {/* LEFT: Text & CTA Button */}
+          <div className="lg:col-span-6 flex flex-col items-start text-left max-w-xl">
+            <h2 className="text-3xl sm:text-4xl lg:text-[50px] font-extrabold text-white tracking-tight leading-[1.14] mb-6">
+              Book Your<br />
+              Appointment Today!
             </h2>
-            
-            <p className="text-white/80 text-base md:text-lg leading-relaxed max-w-xl font-normal mb-10">
-              Schedule a comprehensive dental consultation with our clinical team today. Whether you need routine cleanings or specialized treatment plans, we provide the highest standard of oral care.
+
+            <p className="text-white/90 text-sm sm:text-base leading-relaxed font-normal mb-8">
+              Your smile deserves the best care! Whether you need a routine check-up, cosmetic enhancement, or specialized treatment, our expert team at VR Dental Care is here to help. Schedule your appointment now and take the first step toward a healthier, brighter smile. Easy booking, expert care, and a comfortable experience await you!
             </p>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
+            {/* White Button with Blue Text */}
+            <div>
               <a
-                href="#appointment"
-                onClick={handleScrollToBooking}
-                className="px-8 py-4 bg-white hover:bg-slate-100 text-primary text-base font-bold rounded-full shadow-lg transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 cursor-pointer"
+                href="#consultancy"
+                onClick={scrollToBooking}
+                className="inline-flex items-center justify-center px-8 py-3 bg-white text-[#0284c7] font-bold text-sm sm:text-base rounded-lg shadow-lg hover:bg-slate-50 active:scale-95 transition-all duration-200 cursor-pointer"
               >
-                <Calendar className="w-5 h-5 text-primary" />
-                <span>Book Appointment</span>
-              </a>
-              <a
-                href="tel:09885349798"
-                className="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white text-base font-bold rounded-full transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 cursor-pointer"
-              >
-                <Phone className="w-5 h-5 text-white" />
-                <span>Call Us: 098853 49798</span>
+                Get Started
               </a>
             </div>
           </div>
 
-          {/* Treatment Image Column */}
-          <div className="lg:col-span-4 relative flex items-center justify-center h-[320px] md:h-[380px] lg:h-[420px] w-full overflow-hidden">
-            <Image
-              src={getAssetPath("/treatment.jpeg")}
-              alt="V.R. Dental Care & Dental Implant Centre Treatment"
-              width={380}
-              height={480}
-              className="object-contain object-center max-h-full drop-shadow-2xl"
-              priority
-              unoptimized
-            />
+          {/* RIGHT: Large Cartoon Smiling Tooth in Circular Light Blue Container */}
+          <div className="lg:col-span-6 flex justify-center lg:justify-end relative">
+            {/* Circular Backdrop */}
+            <div className="relative w-[300px] h-[300px] sm:w-[380px] sm:h-[380px] lg:w-[430px] lg:h-[430px] rounded-full bg-[#a8dbf8]/40 flex items-center justify-center border-4 border-white/20 shadow-2xl">
+              {/* Cartoon Smiling Tooth Character */}
+              <div className="relative w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] lg:w-[390px] lg:h-[390px] filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.25)]">
+                <Image
+                  src={getAssetPath("/smiling-tooth.png")}
+                  alt="Friendly Smiling Tooth - VR Dental Care"
+                  fill
+                  className="object-contain"
+                  priority
+                  unoptimized
+                />
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
     </section>

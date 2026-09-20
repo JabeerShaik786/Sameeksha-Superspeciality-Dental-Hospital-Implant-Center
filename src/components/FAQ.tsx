@@ -91,7 +91,7 @@ export default function FAQ() {
             Frequently Asked Dental Questions
           </h2>
           <p className="text-gray-text text-base md:text-lg font-normal leading-relaxed mb-8">
-            Can't find the answer you're looking for? Reach out to our front desk team at any time. We are here to assist you with scheduling, clinical questions, or payment support.
+            Can&apos;t find the answer you&apos;re looking for? Reach out to our front desk team at any time. We are here to assist you with scheduling, clinical questions, or payment support.
           </p>
           <a
             href="#contact"

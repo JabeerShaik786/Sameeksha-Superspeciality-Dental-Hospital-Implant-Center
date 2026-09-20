@@ -3,8 +3,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { motion, AnimatePresence } from "framer-motion";
-import { MapPin, Phone, Mail, Clock, CheckCircle, Send, Calendar, Smile } from "lucide-react";
-import Image from "next/image";
+import { MapPin, Phone, Mail, Clock, CheckCircle, Send, Calendar } from "lucide-react";
 
 interface BookingFormData {
   fullName: string;

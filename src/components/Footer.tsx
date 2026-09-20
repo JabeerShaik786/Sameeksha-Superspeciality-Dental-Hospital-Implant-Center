@@ -1,25 +1,35 @@
 "use client";
 
+import Link from "next/link";
+import Image from "next/image";
 import { Smile, Mail, MapPin, Phone, MessageSquare, Clock } from "lucide-react";
+import { getAssetPath } from "@/lib/getAssetPath";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    if (href === "#home") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      return;
-    }
-    const target = document.querySelector(href);
-    if (target) {
-      const headerEl = document.querySelector("header");
-      const navbarHeight = headerEl ? headerEl.getBoundingClientRect().height + 16 : 96;
-      const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight - 12;
-      window.scrollTo({
-        top: Math.max(0, targetPosition),
-        behavior: "smooth",
-      });
+    if (href.startsWith("#")) {
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        if (href === "#home") {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          window.history.pushState(null, "", window.location.pathname);
+          return;
+        }
+        const headerEl = document.querySelector("header");
+        const navbarHeight = headerEl ? headerEl.getBoundingClientRect().height + 16 : 96;
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight - 12;
+        window.scrollTo({
+          top: Math.max(0, targetPosition),
+          behavior: "smooth",
+        });
+        window.history.pushState(null, "", href);
+      } else {
+        e.preventDefault();
+        window.location.href = getAssetPath(`/${href}`);
+      }
     }
   };
 
@@ -32,7 +42,11 @@ export default function Footer() {
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         {/* Brand Column */}
         <div className="flex flex-col gap-6">
-          <a href="#home" className="flex items-center gap-2 group cursor-pointer">
+          <a
+            href="#home"
+            onClick={(e) => handleLinkClick(e, "#home")}
+            className="flex items-center gap-2 group cursor-pointer"
+          >
             <div className="w-10 h-10 rounded-full bg-primary/20 text-accent flex items-center justify-center">
               <Smile className="w-5 h-5 text-accent" />
             </div>
@@ -118,7 +132,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4 text-sm text-white/60">
             <div className="flex gap-3">
               <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-              <span>3rd Cross St, opposite GMC Balayogi Stadium, Zicria Nagar, Zicriya Nagar, Yanam, Andhra Pradesh 533464</span>
+              <span>P6M6+2M Yanam, Puducherry</span>
             </div>
             <div className="flex gap-3">
               <Phone className="w-5 h-5 text-accent shrink-0 mt-0.5" />
@@ -152,18 +166,35 @@ export default function Footer() {
 
       <hr className="border-white/10 max-w-[1440px] mx-auto px-6 md:px-12" />
 
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 mt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40 text-center md:text-left">
         <p>© {currentYear} V.R. Dental Care & Dental Implant Centre. All rights reserved.</p>
-        <div className="flex items-center gap-6">
-          <a href="#" className="hover:text-white transition-colors duration-200">
+        <p className="text-white/40 flex items-center justify-center gap-1.5">
+          <Image
+            src={getAssetPath("/jk-logo.png")}
+            alt="JK & Co."
+            width={18}
+            height={18}
+            className="w-[18px] h-[18px] object-contain shrink-0"
+            unoptimized
+          />
+          <span>Designed and Managed by JK & Co.</span>
+        </p>
+        <div className="flex items-center justify-center gap-6">
+          <Link href="/privacy-policy" className="hover:text-white transition-colors duration-200">
             Privacy Policy
-          </a>
-          <a href="#" className="hover:text-white transition-colors duration-200">
+          </Link>
+          <Link href="/terms-of-service" className="hover:text-white transition-colors duration-200">
             Terms of Service
-          </a>
+          </Link>
           <a href="#" className="hover:text-white transition-colors duration-200">
             Sitemap
           </a>
+          <Link
+            href="/login"
+            className="hover:text-white transition-colors duration-200 opacity-70 hover:opacity-100"
+          >
+            Login
+          </Link>
         </div>
       </div>
     </footer>

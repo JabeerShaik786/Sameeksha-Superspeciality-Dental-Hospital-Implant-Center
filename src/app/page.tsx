@@ -1,15 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import TrustBar from "@/components/TrustBar";
-import AboutDoctor from "@/components/AboutDoctor";
-import WhyChooseUs from "@/components/WhyChooseUs";
+import ConsultancyCard from "@/components/ConsultancyCard";
+import AboutSection from "@/components/AboutSection";
 import Services from "@/components/Services";
-import PatientJourney from "@/components/PatientJourney";
+import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
-import Blog from "@/components/Blog";
-import FAQ from "@/components/FAQ";
 import AppointmentCTA from "@/components/AppointmentCTA";
-import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 
@@ -19,16 +15,12 @@ export default function Home() {
       <Navbar />
       <main className="flex-grow overflow-x-hidden">
         <Hero />
-        <TrustBar />
-        <AboutDoctor />
-        <WhyChooseUs />
+        <ConsultancyCard />
+        <AboutSection />
         <Services />
-        <PatientJourney />
+        <Gallery />
         <Testimonials />
-        <Blog />
-        <FAQ />
         <AppointmentCTA />
-        <ContactSection />
       </main>
       <Footer />
       <FloatingButtons />
