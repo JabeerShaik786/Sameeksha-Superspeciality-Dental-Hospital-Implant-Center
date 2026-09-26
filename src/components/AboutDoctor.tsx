@@ -1,6 +1,7 @@
-﻿"use client";
+"use client";
 
-import { UserRound } from "lucide-react";
+import Image from "next/image";
+import { getAssetPath } from "@/lib/getAssetPath";
 
 export default function AboutDoctor() {
   const scrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -130,29 +131,24 @@ export default function AboutDoctor() {
                 />
               </svg>
 
-              {/* Doctor Image Placeholder Container */}
-              <div className="relative w-full aspect-[4/5] min-h-[400px] sm:min-h-[460px] lg:min-h-[490px] rounded-3xl sm:rounded-[36px] bg-gradient-to-b from-[#0AA8DE]/12 via-[#0AA8DE]/5 to-[#0AA8DE]/15 border-2 border-dashed border-[#0AA8DE]/40 shadow-xl shadow-slate-200/50 flex flex-col items-center justify-center p-8 text-center overflow-hidden group">
+              {/* Doctor Image Container */}
+              <div className="relative w-full aspect-[4/5] min-h-[400px] sm:min-h-[460px] lg:min-h-[490px] rounded-3xl sm:rounded-[36px] bg-gradient-to-b from-[#0AA8DE]/12 via-[#0AA8DE]/5 to-[#0AA8DE]/15 border-2 border-dashed border-[#0AA8DE]/40 shadow-xl shadow-slate-200/50 flex items-end justify-center pt-3 px-3 pb-0 sm:pt-4 sm:px-4 overflow-hidden group">
                 
                 {/* Subtle internal background glow */}
                 <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-white/60 blur-2xl pointer-events-none" />
 
-                {/* Doctor Silhouette / Medical Avatar Placeholder Icon */}
-                <div className="relative z-10 w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-white shadow-md border-2 border-[#0AA8DE]/30 flex items-center justify-center mb-6 text-[#0AA8DE]">
-                  <UserRound className="w-14 h-14 sm:w-16 sm:h-16 text-[#0AA8DE]/75" strokeWidth={1.5} />
+                {/* Doctor Cutout PNG */}
+                <div className="relative w-full h-full flex items-end justify-center z-10">
+                  <Image
+                    src={getAssetPath("/doctor_raju.png")}
+                    alt="Dr. P. S. Raju - Dental Surgeon"
+                    fill
+                    priority
+                    className="object-contain object-bottom drop-shadow-[0_10px_20px_rgba(10,168,222,0.12)]"
+                    sizes="(max-width: 640px) 90vw, (max-width: 1024px) 420px, 460px"
+                    unoptimized
+                  />
                 </div>
-
-                {/* Badge Label */}
-                <div className="relative z-10 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-sm border border-[#0AA8DE]/30 shadow-sm mb-2">
-                  <span className="w-2 h-2 rounded-full bg-[#E71B1E] animate-pulse" />
-                  <span className="text-xs sm:text-sm font-semibold text-[#0f2942]">
-                    Doctor Image Placeholder
-                  </span>
-                </div>
-
-                {/* Dimension hint / helper text */}
-                <p className="relative z-10 text-xs text-slate-500 font-medium max-w-[240px] leading-relaxed">
-                  Reserved frame for doctor portrait photograph
-                </p>
 
               </div>
 
