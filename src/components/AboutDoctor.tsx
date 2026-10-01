@@ -4,26 +4,10 @@ import Image from "next/image";
 import { getAssetPath } from "@/lib/getAssetPath";
 
 export default function AboutDoctor() {
-  const scrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const target =
-      document.querySelector("#contact") ||
-      document.querySelector("#appointment") ||
-      document.querySelector("#about");
-    if (target) {
-      const targetPosition =
-        target.getBoundingClientRect().top + window.scrollY - 90;
-      window.scrollTo({
-        top: Math.max(0, targetPosition),
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <section
       id="doctor"
-      className="py-16 sm:py-20 lg:py-24 bg-white relative overflow-hidden"
+      className="pt-20 sm:pt-24 lg:pt-28 pb-16 sm:pb-20 lg:pb-24 bg-white relative overflow-hidden scroll-mt-28"
     >
       {/* Decorative Background: Soft Tooth Outline */}
       <div
@@ -63,12 +47,12 @@ export default function AboutDoctor() {
             </h2>
 
             {/* Tagline: Experienced. Compassionate. Dedicated to Your Smile. */}
-            <p className="text-base sm:text-lg font-semibold text-[#0AA8DE] mb-4 tracking-tight">
+            <p className="text-base sm:text-lg font-semibold text-[#0AA8DE] mb-5 tracking-tight">
               Experienced. Compassionate. Dedicated to Your Smile.
             </p>
 
             {/* Doctor Profile Paragraphs */}
-            <div className="space-y-3.5 sm:space-y-4 text-slate-600 text-sm sm:text-[15px] leading-relaxed font-normal mb-8 max-w-2xl">
+            <div className="space-y-4 sm:space-y-5 text-slate-600 text-sm sm:text-[15px] leading-relaxed font-normal max-w-2xl">
               <p>
                 Dr. Suvarna Raju P (BDS, FAGE) is a highly skilled Dental Surgeon and Implantologist who leads the clinical team at Sameeksha Dental Hospital with an enduring commitment to precision, innovation, and evidence-based care.
               </p>
@@ -85,23 +69,11 @@ export default function AboutDoctor() {
                 Dedicated to clinical excellence and patient well-being, his primary focus is providing accurate diagnoses and virtually painless procedures that minimize downtime while optimizing both functional aesthetics and long-term oral health. Under his compassionate direction, patients experience comfortable, trustworthy, and results-driven dentistry designed to restore confident, healthy smiles.
               </p>
             </div>
-
-            {/* Primary button: Know More → */}
-            <div>
-              <a
-                href="#about"
-                onClick={scrollToContact}
-                className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-[#E71B1E] hover:bg-[#c41215] text-white font-bold text-sm sm:text-base rounded-lg shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-95 transition-all duration-200 cursor-pointer"
-              >
-                <span>Know More</span>
-                <span className="text-lg leading-none">→</span>
-              </a>
-            </div>
           </div>
 
           {/* ================= RIGHT SIDE: Doctor Image Placeholder & Decorative Elements ================= */}
           <div className="lg:col-span-6 w-full flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[420px] lg:max-w-[460px] flex items-center justify-center">
+            <div className="relative w-full max-w-[440px] sm:max-w-[470px] lg:max-w-[500px] flex items-center justify-center">
               
               {/* Decorative 1: Soft Light-Blue Circular / Curved Background Shape */}
               <div
@@ -109,7 +81,7 @@ export default function AboutDoctor() {
                 aria-hidden="true"
               />
               <div
-                className="absolute -right-4 sm:-right-8 top-1/2 -translate-y-1/2 w-64 sm:w-80 h-64 sm:h-80 rounded-full bg-[#0AA8DE]/10 -z-10 pointer-events-none"
+                className="absolute -right-4 sm:-right-8 top-1/2 -translate-y-1/2 w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-[#0AA8DE]/10 -z-10 pointer-events-none"
                 aria-hidden="true"
               />
 
@@ -143,10 +115,10 @@ export default function AboutDoctor() {
               </svg>
 
               {/* Doctor Image Container */}
-              <div className="relative w-full aspect-[4/5] min-h-[400px] sm:min-h-[460px] lg:min-h-[490px] rounded-3xl sm:rounded-[36px] bg-gradient-to-b from-[#0AA8DE]/12 via-[#0AA8DE]/5 to-[#0AA8DE]/15 border-2 border-dashed border-[#0AA8DE]/40 shadow-xl shadow-slate-200/50 flex items-end justify-center pt-3 px-3 pb-0 sm:pt-4 sm:px-4 overflow-hidden group">
+              <div className="relative w-full aspect-[4/5] min-h-[420px] sm:min-h-[480px] lg:min-h-[520px] rounded-3xl sm:rounded-[36px] bg-gradient-to-b from-[#0AA8DE]/12 via-[#0AA8DE]/5 to-[#0AA8DE]/15 border-2 border-dashed border-[#0AA8DE]/40 shadow-xl shadow-slate-200/50 flex items-end justify-center pt-3 px-3 pb-0 sm:pt-4 sm:px-4 overflow-hidden group">
                 
                 {/* Subtle internal background glow */}
-                <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-white/60 blur-2xl pointer-events-none" />
+                <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-52 h-52 rounded-full bg-white/60 blur-2xl pointer-events-none" />
 
                 {/* Doctor Cutout PNG */}
                 <div className="relative w-full h-full flex items-end justify-center z-10">
@@ -156,7 +128,7 @@ export default function AboutDoctor() {
                     fill
                     priority
                     className="object-contain object-bottom drop-shadow-[0_10px_20px_rgba(10,168,222,0.12)]"
-                    sizes="(max-width: 640px) 90vw, (max-width: 1024px) 420px, 460px"
+                    sizes="(max-width: 640px) 90vw, (max-width: 1024px) 470px, 500px"
                     unoptimized
                   />
                 </div>
