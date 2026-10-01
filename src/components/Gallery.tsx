@@ -42,13 +42,13 @@ export default function Gallery() {
         {/* Gallery 1 + 4 Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 md:gap-6 items-stretch max-w-[1100px] mx-auto">
           
-          {/* LEFT: One Large Clinic Operatory Image (~50% width) */}
+          {/* LEFT: One Large Clinic Operatory Image (~50% width) - 1. Dental clinic interior and consultation room */}
           <div className="lg:col-span-6 relative w-full aspect-[4/3] lg:aspect-auto lg:h-[430px] rounded-2xl md:rounded-3xl overflow-hidden shadow-md border border-slate-100 hover:border-[#E71B1E] hover:shadow-xl transition-all duration-300 group">
             <Image
               src={getAssetPath("/gallery/gallery_1.jpg")}
-              alt="Sameeksha Dental Hospital Doctor Consultation Office"
+              alt="Sameeksha Dental Hospital Clinic Interior and Consultation Room"
               fill
-              className="object-cover group-hover:scale-105 transition-transform duration-500"
+              className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
               sizes="(max-width: 1024px) 100vw, 50vw"
               priority
               unoptimized
@@ -58,11 +58,11 @@ export default function Gallery() {
           {/* RIGHT: 2x2 Grid of 4 Smaller Images */}
           <div className="lg:col-span-6 grid grid-cols-2 gap-4 md:gap-5 w-full">
             
-            {/* Top-Left: Image 2 */}
+            {/* Top-Left: Image 2 - Dental treatment room and equipment */}
             <div className="relative w-full aspect-[4/3] lg:h-[202px] rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:border-[#E71B1E] hover:shadow-md transition-all duration-300 group">
               <Image
                 src={getAssetPath("/gallery/gallery_2.jpg")}
-                alt="Sameeksha Dental Hospital Advanced Operatory & Imaging"
+                alt="Sameeksha Dental Hospital Dental Treatment Room and Equipment"
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 1024px) 50vw, 25vw"
@@ -70,37 +70,37 @@ export default function Gallery() {
               />
             </div>
 
-            {/* Top-Right: Image 3 */}
+            {/* Top-Right: Image 3 - Clinic reception area */}
             <div className="relative w-full aspect-[4/3] lg:h-[202px] rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:border-[#E71B1E] hover:shadow-md transition-all duration-300 group">
               <Image
-                src={getAssetPath("/gallery/gallery_3.png")}
-                alt="Sameeksha Dental Hospital Reception & Waiting Lounge"
+                src={getAssetPath("/gallery/gallery_3.jpg")}
+                alt="Sameeksha Dental Hospital Clinic Reception Area"
                 fill
-                className="object-cover object-[center_35%] group-hover:scale-105 transition-transform duration-500"
+                className="object-cover object-[center_60%] group-hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 1024px) 50vw, 25vw"
                 unoptimized
               />
             </div>
 
-            {/* Bottom-Left: Image 4 */}
+            {/* Bottom-Left: Image 4 - Clinic exterior and signage */}
             <div className="relative w-full aspect-[4/3] lg:h-[202px] rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:border-[#E71B1E] hover:shadow-md transition-all duration-300 group">
               <Image
                 src={getAssetPath("/gallery/gallery_4.jpg")}
-                alt="Sameeksha Dental Hospital Dental Treatment Room"
+                alt="Sameeksha Super Speciality Dental Hospital Clinic Exterior and Signage"
                 fill
-                className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                className="object-cover object-[center_32%] group-hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 1024px) 50vw, 25vw"
                 unoptimized
               />
             </div>
 
-            {/* Bottom-Right: Image 5 */}
+            {/* Bottom-Right: Image 5 - Additional dental treatment room and equipment */}
             <div className="relative w-full aspect-[4/3] lg:h-[202px] rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:border-[#E71B1E] hover:shadow-md transition-all duration-300 group">
               <Image
-                src={getAssetPath("/gallery/gallery_5.png")}
-                alt="Sameeksha Super Speciality Dental Hospital Building Exterior"
+                src={getAssetPath("/gallery/gallery_5.jpg")}
+                alt="Sameeksha Dental Hospital Additional Dental Treatment Room and Equipment"
                 fill
-                className="object-cover object-[center_28%] group-hover:scale-105 transition-transform duration-500"
+                className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 1024px) 50vw, 25vw"
                 unoptimized
               />
