@@ -67,13 +67,24 @@ export default function AboutDoctor() {
               Experienced. Compassionate. Dedicated to Your Smile.
             </p>
 
-            {/* Paragraph */}
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-normal mb-8 max-w-xl">
-              With years of experience in advanced dental care, our doctor is
-              committed to providing personalized, gentle, and high-quality
-              treatment. Every patient is cared for with expertise, compassion,
-              and a focus on achieving a healthy, confident smile.
-            </p>
+            {/* Doctor Profile Paragraphs */}
+            <div className="space-y-3.5 sm:space-y-4 text-slate-600 text-sm sm:text-[15px] leading-relaxed font-normal mb-8 max-w-2xl">
+              <p>
+                Dr. Suvarna Raju P (BDS, FAGE) is a highly skilled Dental Surgeon and Implantologist who leads the clinical team at Sameeksha Dental Hospital with an enduring commitment to precision, innovation, and evidence-based care.
+              </p>
+              <p>
+                After earning his Bachelor of Dental Surgery and completing specialized training in Implantology at St. Joseph Dental College & Hospital, Eluru, he became an active member of the Indian Dental Association.
+              </p>
+              <p>
+                His clinical expertise encompasses root canal therapy, aesthetic restorations, surgical extractions, pain and infection management, as well as both guided and non-guided dental implant placements.
+              </p>
+              <p>
+                Anchored by a conservative treatment philosophy, Dr. Suvarna Raju prioritizes preserving natural tooth structure whenever possible by integrating advanced diagnostics, digital dentistry, and strict sterilization protocols. He ensures the practice remains at the forefront of contemporary dental science while delivering personalized, minimally invasive care tailored to each individual.
+              </p>
+              <p>
+                Dedicated to clinical excellence and patient well-being, his primary focus is providing accurate diagnoses and virtually painless procedures that minimize downtime while optimizing both functional aesthetics and long-term oral health. Under his compassionate direction, patients experience comfortable, trustworthy, and results-driven dentistry designed to restore confident, healthy smiles.
+              </p>
+            </div>
 
             {/* Primary button: Know More → */}
             <div>
