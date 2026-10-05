@@ -2,58 +2,41 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
-import { Star } from "lucide-react";
+import { Star, StarHalf } from "lucide-react";
 import { getAssetPath } from "@/lib/getAssetPath";
 
 interface TestimonialCardData {
   id: number;
   name: string;
   avatar: string;
+  rating: number;
   quote: string;
 }
 
 const TESTIMONIALS_DATA: TestimonialCardData[] = [
   {
     id: 1,
-    name: "Srinivas rao",
+    name: "K Ksrkraju",
     avatar: "/figma/avatar_srinivas.png",
+    rating: 4.5,
     quote:
-      "Dr. Praveen and the team at V R Dental Care, Yanam are absolutely fantastic! They always make me feel comfortable during procedures, clearly explain treatment options, and are genuinely friendly. I highly recommend them for anyone looking for a caring and skilled dental practice.",
+      "Highly recommended for dental care.\n\nI recently had a root canal treatment done here, and it was a smooth experience. The hospital maintains excellent hygiene, and all the tools used by the staff were completely clean and sanitized.\n\nThe staff is incredibly friendly and cooperative, which makes you feel right at ease. A special shout-out to the doctor, who took the time to explain the entire procedure so patiently. Overall, a great experience—giving it a solid 4.5 out of 5.",
   },
   {
     id: 2,
-    name: "Bonam Bhargav",
+    name: "Dyva Kumari Ranganadham",
     avatar: "/figma/avatar_bhargav.png",
+    rating: 5,
     quote:
-      "I had a great experience at VR Dental Clinic! The staff was very friendly and professional, and the doctors took the time to explain everything clearly. The clinic is well-maintained, and the treatment was smooth and painless. I highly recommend VR Dental Clinic for anyone looking for quality dental care.",
+      "Had a really good experience here. Got my scaling, root planing, and wisdom tooth extraction done at Sameeksha Multi Speciality Hospital. The dentist was patient, gentle, and explained everything clearly so there were no surprises. Everything was hygienic and well-organized, and my recovery has been very smooth. Highly recommend this place to anyone needing dental work.",
   },
   {
     id: 3,
-    name: "Pampana Valibaba",
+    name: "Dyva Kumari Ranganadham",
     avatar: "/figma/avatar_valibaba.png",
+    rating: 5,
     quote:
-      "Experienced , skilled Doctors are working with all latest equipment. Dr. Praveen care and treatment is very nice in all aspects. V.R. is the best Dental Care in YANAM.",
-  },
-  {
-    id: 4,
-    name: "K. Satyanarayana",
-    avatar: "/figma/avatar_satyanarayana.jpg",
-    quote:
-      "Got dental implant treatment done by Dr. Praveen. The procedure was completed with utmost precision and care. Very hygienic clinic with state-of-the-art equipment. Truly the top dental clinic in Yanam!",
-  },
-  {
-    id: 5,
-    name: "M. Durga Prasad",
-    avatar: "/figma/avatar_durgaprasad.jpg",
-    quote:
-      "Visited for root canal treatment and crown placement. The doctor explained every step patiently and the treatment was completely painless. Exceptional service and very reasonable pricing.",
-  },
-  {
-    id: 6,
-    name: "V. Lakshmi",
-    avatar: "/figma/avatar_lakshmi.jpg",
-    quote:
-      "Very polite staff and excellent treatment by Dr. Praveen. Clean and modern clinic environment. Best place for all dental and cosmetic teeth alignment needs in Yanam.",
+      "I had a very positive experience with Dr. Suvarna Raju, who demonstrated exceptional patience and a gentle approach while treating patients. The entire treatment process was handled smoothly and comfortably, with great care taken to ensure it was virtually pain-free. Dr. Suvarna Raju’s polite attitude and reasonable treatment costs are truly commendable.\n\nI am highly satisfied with the treatment received. The clinic also provides excellent patient care and follow-up services. The reception team was very attentive, making post-treatment verification calls to check on my well-being, which reflects their dedication to patient satisfaction.",
   },
 ];
 
@@ -198,9 +181,11 @@ export default function Testimonials() {
                   {/* Accent bar & Review Quote */}
                   <div>
                     <div className="w-8 h-1 bg-[#E71B1E] rounded-full mb-3" />
-                    <p className="text-xs sm:text-[13px] text-slate-600 leading-relaxed font-normal mb-8">
-                      {item.quote}
-                    </p>
+                    <div className="space-y-2 sm:space-y-2.5 text-xs sm:text-[13px] text-slate-600 leading-relaxed font-normal mb-6">
+                      {item.quote.split("\n\n").map((para, pIdx) => (
+                        <p key={pIdx}>{para}</p>
+                      ))}
+                    </div>
                   </div>
 
                   {/* Author & Rating */}
@@ -218,11 +203,38 @@ export default function Testimonials() {
                       <h4 className="font-bold text-sm text-[#0f2942] leading-tight">
                         {item.name}
                       </h4>
-                      {/* 5 Accent Red Stars */}
-                      <div className="flex text-[#E71B1E] gap-0.5 mt-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-3.5 h-3.5 fill-current" />
-                        ))}
+                      {/* Rating Stars */}
+                      <div
+                        className="flex text-[#E71B1E] gap-0.5 mt-1 items-center"
+                        aria-label={`${item.rating} out of 5 stars`}
+                      >
+                        {[1, 2, 3, 4, 5].map((star) => {
+                          if (item.rating >= star) {
+                            return (
+                              <Star
+                                key={star}
+                                className="w-3.5 h-3.5 fill-current stroke-current"
+                              />
+                            );
+                          } else if (item.rating >= star - 0.5) {
+                            return (
+                              <div
+                                key={star}
+                                className="relative w-3.5 h-3.5 inline-block"
+                              >
+                                <Star className="w-3.5 h-3.5 fill-none stroke-current" />
+                                <StarHalf className="w-3.5 h-3.5 fill-current stroke-current absolute top-0 left-0" />
+                              </div>
+                            );
+                          } else {
+                            return (
+                              <Star
+                                key={star}
+                                className="w-3.5 h-3.5 fill-none stroke-current opacity-30"
+                              />
+                            );
+                          }
+                        })}
                       </div>
                     </div>
                   </div>
